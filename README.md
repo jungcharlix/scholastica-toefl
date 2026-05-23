@@ -2,7 +2,7 @@
 
 一個為目標 100+ 分的 TOEFL 考生打造的靜態網站。
 牛津/劍橋古典文書風格,純 HTML/CSS/JS,無框架依賴。
-
+https://jungcharlix.github.io/scholastica-toefl/
 > *"Sapere aude." — Dare to know.*
 
 ## ✦ 功能總覽

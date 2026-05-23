@@ -2,8 +2,11 @@
 
 一個為目標 100+ 分的 TOEFL 考生打造的靜態網站。
 牛津/劍橋古典文書風格,純 HTML/CSS/JS,無框架依賴。
-https://jungcharlix.github.io/scholastica-toefl/
+
+🌐 **線上 Demo** → [https://jungcharlix.github.io/scholastica-toefl/](https://jungcharlix.github.io/scholastica-toefl/)
+
 > *"Sapere aude." — Dare to know.*
+> — 拉丁文,意為「敢於求知」。出自賀拉斯,被康德定為啟蒙運動的座右銘。
 
 ## ✦ 功能總覽
 
@@ -86,10 +89,14 @@ npx http-server -p 8000
 
 ## ✦ 部署到 GitHub Pages
 
-1. 將專案推上 GitHub(見下方推送步驟)
+本專案已部署於:**[https://jungcharlix.github.io/scholastica-toefl/](https://jungcharlix.github.io/scholastica-toefl/)**
+
+若你要 fork 自己的版本:
+
+1. Fork 或 clone 本 repo
 2. 進入 repo → **Settings** → **Pages**
 3. 在 **Source** 選擇 `Deploy from a branch`
-4. **Branch** 選 `main`(或 `master`),資料夾選 `/ (root)`
+4. **Branch** 選 `main`,資料夾選 `/ (root)`
 5. 按 Save,等 1–2 分鐘
 6. 你的網站會在 `https://<你的帳號>.github.io/<repo-名稱>/` 上線
 

@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scholastica — TOEFL 進階備考</title>
+<meta name="description" content="為目標 100+ 分的 TOEFL 考生量身打造。包含字彙、閱讀、聽力、口說、寫作、20 套真題模擬、完整詳解與個人化 14 天訓練計畫。">
+<meta name="keywords" content="TOEFL,托福,備考,真題,TPO,詳解,模擬考">
+<meta name="author" content="Scholastica">
+<meta property="og:title" content="Scholastica — TOEFL 進階備考">
+<meta property="og:description" content="嚴選學術文本、實戰演練與精準回饋,將你的英文從「能溝通」推向「能論述」。">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#1a1f2e">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,0..100;1,9..144,300..900,0..100&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<header>
+  <div class="nav-inner">
+    <a href="#top" class="logo">Scholastica</a>
+    <button class="menu-toggle" onclick="toggleMenu()">MENU</button>
+    <nav>
+      <ul id="navList">
+        <li><a href="#vocabulary" onclick="closeMenu()">單字</a></li>
+        <li><a href="#reading" onclick="closeMenu()">閱讀</a></li>
+        <li><a href="#listening" onclick="closeMenu()">聽力</a></li>
+        <li><a href="#speaking" onclick="closeMenu()">口說</a></li>
+        <li><a href="#writing" onclick="closeMenu()">寫作</a></li>
+        <li><a href="#exam" onclick="closeMenu()">真題</a></li>
+        <li><a href="#strategy" onclick="closeMenu()">策略</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ========== HERO ========== -->
+  <section class="hero">
+    <div class="hero-content">
+      <span class="eyebrow">Vol. I &nbsp;·&nbsp; Advanced Track &nbsp;·&nbsp; 2026</span>
+      <h1>The art of <span class="italic-accent">reading,</span><br>writing &amp; <span class="italic-accent">thinking</span><br>in English.</h1>
+      <p class="lede">為目標分數 100+ 的考生量身打造。透過嚴選的學術文本、實戰演練與精準回饋,將你的英文從「能溝通」推向「能論述」。</p>
+    </div>
+    <aside class="hero-meta">
+      <div>
+        <strong>TODAY'S TARGET</strong>
+        20 vocabulary · 1 reading · 2 speaking tasks
+      </div>
+      <div>
+        <strong>CURRENT BAND</strong>
+        <div class="score-display">92</div>
+        最後測驗 · 兩週前
+      </div>
+      <div>
+        <strong>NEXT TEST</strong>
+        2026.06.21 — 35 天後
+      </div>
+    </aside>
+  </section>
+
+  <!-- ========== DASHBOARD ========== -->
+  <section style="padding-top: 0; border-bottom: none;">
+    <div class="dashboard">
+      <div class="stat-card">
+        <div class="stat-label">Reading</div>
+        <div class="stat-value">24<span class="unit">/30</span></div>
+        <div class="stat-bar"><div class="stat-bar-fill" style="width: 80%"></div></div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Listening</div>
+        <div class="stat-value">22<span class="unit">/30</span></div>
+        <div class="stat-bar"><div class="stat-bar-fill" style="width: 73%"></div></div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Speaking</div>
+        <div class="stat-value">23<span class="unit">/30</span></div>
+        <div class="stat-bar"><div class="stat-bar-fill" style="width: 77%"></div></div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Writing</div>
+        <div class="stat-value">23<span class="unit">/30</span></div>
+        <div class="stat-bar"><div class="stat-bar-fill" style="width: 77%"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== VOCABULARY ========== -->
+  <section id="vocabulary">
+    <div class="section-header">
+      <div>
+        <span class="eyebrow">§ One &nbsp;·&nbsp; Lexicon</span>
+        <h2>進階字彙<span class="italic-accent"> 學院</span></h2>
+      </div>
+      <p class="desc">精選 30 個 TOEFL 高頻學術詞彙,涵蓋自然科學、人文社會與心理學領域。先以卡片熟悉,再進行測驗鞏固。</p>
+    </div>
+
+    <div class="tabs">
+      <button class="tab active" onclick="switchTab(this, 'flashcards')">字卡學習</button>
+      <button class="tab" onclick="switchTab(this, 'quiz')">字義測驗</button>
+      <button class="tab" onclick="switchTab(this, 'wordlist')">詞彙總覽</button>
+    </div>
+
+    <div id="flashcards" class="tab-content active">
+      <div class="flashcard-container">
+        <div class="flashcard" id="flashcard" onclick="flipCard()">
+          <div class="flashcard-inner">
+            <div class="flashcard-face flashcard-front">
+              <div class="part-of-speech" id="cardPos">verb</div>
+              <div class="word" id="cardWord">corroborate</div>
+              <div class="pronunciation" id="cardPron">/kəˈrɒbəreɪt/</div>
+              <div class="flip-hint">點擊翻面 ⤴</div>
+            </div>
+            <div class="flashcard-face flashcard-back">
+              <div class="part-of-speech" id="cardPosBack">verb</div>
+              <div class="definition" id="cardDef">確認、佐證(某項陳述或理論的真實性)</div>
+              <div class="example" id="cardEx">"Recent findings <em>corroborate</em> the hypothesis that early agricultural societies traded over vast distances."</div>
+              <div class="flip-hint">點擊翻回 ⤴</div>
+            </div>
+          </div>
+        </div>
+        <div class="flashcard-controls">
+          <div class="card-counter"><span id="cardNum">1</span><span class="total"> / 30</span></div>
+          <button class="btn btn-ghost" onclick="prevCard()">← 上一張</button>
+          <button class="btn btn-primary" onclick="nextCard()">下一張 →</button>
+          <button class="btn btn-ghost" onclick="shuffleCards()">⇆ 隨機排列</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="quiz" class="tab-content">
+      <div id="quizContainer"></div>
+      <div style="display: flex; gap: 16px; margin-top: 32px;">
+        <button class="btn btn-primary" onclick="checkQuiz()">提交答案</button>
+        <button class="btn btn-ghost" onclick="resetQuiz()">重新測驗</button>
+        <div id="quizScore" style="margin-left:auto; align-self:center; font-family:'Fraunces',serif; font-size:24px; color:var(--oxblood); font-style:italic;"></div>
+      </div>
+    </div>
+
+    <div id="wordlist" class="tab-content">
+      <div id="wordlistContent" style="columns: 2; column-gap: 48px;"></div>
+    </div>
+  </section>
+
+  <!-- ========== READING ========== -->
+  <section id="reading">
+    <div class="section-header">
+      <div>
+        <span class="eyebrow">§ Two &nbsp;·&nbsp; Lectio</span>
+        <h2>學術閱讀<span class="italic-accent"> 文選</span></h2>
+      </div>
+      <p class="desc">真實長度與難度的 TPO 風格文章。建議計時 18 分鐘完成閱讀與作答。</p>
+    </div>
+
+    <div class="reading-container">
+      <article class="passage">
+        <div class="passage-title">The Domestication of Fire</div>
+        <div class="passage-meta">
+          <span>Anthropology</span>
+          <span>~700 words</span>
+          <span>Difficulty: ★★★★☆</span>
+        </div>
+        <p>The control of fire represents one of the most transformative milestones in human evolution, yet pinpointing precisely when our ancestors first harnessed it remains a matter of considerable debate. Archaeological evidence from sites such as Wonderwerk Cave in South Africa suggests that <span class="highlight">hominins may have controlled fire as early as one million years ago</span>, though many anthropologists argue that habitual, deliberate fire use did not emerge until roughly 400,000 years ago.</p>
+        <p>The distinction between opportunistic and habitual fire use is crucial. Early hominins almost certainly encountered naturally occurring fires—those sparked by lightning strikes or volcanic activity—and may have salvaged useful tools or food from the aftermath. This passive engagement, however, differs fundamentally from the active cultivation of flames: keeping a fire alive, transporting embers, and ultimately generating fire through friction or percussion.</p>
+        <p>Once mastered, fire revolutionized nearly every dimension of hominin life. Cooked food, as Richard Wrangham has argued, dramatically increased caloric availability and digestibility, freeing energy that could be redirected toward brain growth. The shrinking of the human gut and the proportional expansion of cranial capacity over the past 1.8 million years coincide suggestively with this dietary shift. Furthermore, communal cooking may have laid the social foundations for the family hearth—a focal point around which language, storytelling, and cultural transmission could flourish.</p>
+        <p>Fire also extended the productive day. Whereas other primates retire at dusk, hominins gathered around flames could continue toolmaking, planning, and social bonding well into the night. Cognitive psychologists have speculated that this extension of waking hours, combined with the protective warmth and predator deterrence fire provided, accelerated the development of complex social cognition.</p>
+        <p>Yet the archaeological signature of early fire use is notoriously elusive. Charcoal can be deposited by natural wildfires; reddened sediment may result from sun exposure rather than combustion. To distinguish anthropogenic fire from natural occurrences, archaeologists rely on a constellation of indicators: charred bone fragments arranged in patterns, burnt lithics suggesting in-place heating, and stratigraphic evidence that flames were confined to specific locations within a habitation site.</p>
+        <p>Recent micromorphological techniques have allowed researchers to identify ancient hearths with unprecedented precision. At Qesem Cave in Israel, for example, scientists discovered a 300,000-year-old hearth used repeatedly across generations, the soil chemistry preserving a record of sustained, controlled burning. Such findings reinforce the view that, by the Middle Pleistocene, fire had become a stable and central feature of hominin existence.</p>
+        <p>The implications stretch beyond biology into the realm of cognition and culture. Mastery of fire required foresight—gathering fuel before nightfall, anticipating wind direction, teaching the next generation. It demanded cooperation and trust: a fire too close to flammable shelter could be catastrophic. In this sense, the hearth may have been not merely a source of warmth but the original classroom, the first laboratory, and the earliest theater of human imagination.</p>
+      </article>
+
+      <div class="reading-questions">
+        <div class="quiz-question" style="padding: 28px;">
+          <div class="q-number">QUESTION 01 / 03</div>
+          <div class="quiz-prompt" style="font-size: 19px; line-height: 1.4;">According to the passage, what distinguishes habitual fire use from opportunistic fire use?</div>
+          <div class="quiz-options">
+            <button class="quiz-option" onclick="checkReadingAnswer(this, false)"><span class="letter">A</span>Habitual use requires natural fire sources.</button>
+            <button class="quiz-option" onclick="checkReadingAnswer(this, true)"><span class="letter">B</span>Habitual use involves actively keeping, transporting, and generating fire.</button>
+            <button class="quiz-option" onclick="checkReadingAnswer(this, false)"><span class="letter">C</span>Habitual use is limited to cooking food.</button>
+            <button class="quiz-option" onclick="checkReadingAnswer(this, false)"><span class="letter">D</span>Habitual use began one million years ago.</button>
+          </div>
+        </div>
+
+        <div class="quiz-question" style="padding: 28px;">
+          <div class="q-number">QUESTION 02 / 03</div>
+          <div class="quiz-prompt" style="font-size: 19px; line-height: 1.4;">The word <em>elusive</em> in paragraph 5 is closest in meaning to:</div>
+          <div class="quiz-options">
+            <button class="quiz-option" onclick="checkReadingAnswer(this, false)"><span class="letter">A</span>Obvious</button>
+            <button class="quiz-option" onclick="checkReadingAnswer(this, true)"><span class="letter">B</span>Difficult to identify</button>
+            <button class="quiz-option" onclick="checkReadingAnswer(this, false)"><span class="letter">C</span>Plentiful</button>
+            <button class="quiz-option" onclick="checkReadingAnswer(this, false)"><span class="letter">D</span>Recently discovered</button>
+          </div>
+        </div>
+
+        <div class="quiz-question" style="padding: 28px;">
+          <div class="q-number">QUESTION 03 / 03</div>
+          <div class="quiz-prompt" style="font-size: 19px; line-height: 1.4;">Which of the following is NOT mentioned as a consequence of controlling fire?</div>
+          <div class="quiz-options">
+            <button class="quiz-option" onclick="checkReadingAnswer(this, false)"><span class="letter">A</span>Increased caloric availability</button>
+            <button class="quiz-option" onclick="checkReadingAnswer(this, false)"><span class="letter">B</span>Extension of the productive day</button>
+            <button class="quiz-option" onclick="checkReadingAnswer(this, true)"><span class="letter">C</span>Migration to colder climates</button>
+            <button class="quiz-option" onclick="checkReadingAnswer(this, false)"><span class="letter">D</span>Predator deterrence</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== LISTENING ========== -->
+  <section id="listening">
+    <div class="section-header">
+      <div>
+        <span class="eyebrow">§ Three &nbsp;·&nbsp; Auditus</span>
+        <h2>聽力<span class="italic-accent"> 練習室</span></h2>
+      </div>
+      <p class="desc">模擬真實 TOEFL 講座與對話。重點在於辨認結構訊號詞、抓取主旨與細節。</p>
+    </div>
+
+    <div class="listening-tracks">
+      <div class="track-card">
+        <div class="track-type">LECTURE · BIOLOGY</div>
+        <div class="track-title">Symbiosis in Coral Reefs</div>
+        <div class="track-desc">教授講解珊瑚與蟲黃藻的共生關係,並討論氣候暖化對此平衡的破壞。練習辨識「cause-effect」結構。</div>
+        <div class="audio-player">
+          <button class="play-btn" onclick="togglePlay(this, 1)" aria-label="Play">
+            <svg width="12" height="14" viewBox="0 0 12 14" fill="currentColor"><path d="M0 0 L0 14 L12 7 Z"/></svg>
+          </button>
+          <div class="audio-progress"><div class="audio-progress-fill" id="prog1"></div></div>
+          <div class="audio-time" id="time1">5:42</div>
+        </div>
+      </div>
+
+      <div class="track-card">
+        <div class="track-type">CONVERSATION · CAMPUS</div>
+        <div class="track-title">Office Hours: Thesis Advice</div>
+        <div class="track-desc">學生與教授討論論文題目與研究方法。聽出說話者的態度與隱含建議。</div>
+        <div class="audio-player">
+          <button class="play-btn" onclick="togglePlay(this, 2)" aria-label="Play">
+            <svg width="12" height="14" viewBox="0 0 12 14" fill="currentColor"><path d="M0 0 L0 14 L12 7 Z"/></svg>
+          </button>
+          <div class="audio-progress"><div class="audio-progress-fill" id="prog2"></div></div>
+          <div class="audio-time" id="time2">3:18</div>
+        </div>
+      </div>
+
+      <div class="track-card">
+        <div class="track-type">LECTURE · ART HISTORY</div>
+        <div class="track-title">The Bauhaus Movement</div>
+        <div class="track-desc">介紹包浩斯學院的設計哲學與其對現代主義建築的影響。注意專有名詞拼法與年代序列。</div>
+        <div class="audio-player">
+          <button class="play-btn" onclick="togglePlay(this, 3)" aria-label="Play">
+            <svg width="12" height="14" viewBox="0 0 12 14" fill="currentColor"><path d="M0 0 L0 14 L12 7 Z"/></svg>
+          </button>
+          <div class="audio-progress"><div class="audio-progress-fill" id="prog3"></div></div>
+          <div class="audio-time" id="time3">6:05</div>
+        </div>
+      </div>
+
+      <div class="track-card">
+        <div class="track-type">LECTURE · ASTRONOMY</div>
+        <div class="track-title">Exoplanet Detection Methods</div>
+        <div class="track-desc">凌日法與徑向速度法的比較。練習「compare-contrast」題型的筆記策略。</div>
+        <div class="audio-player">
+          <button class="play-btn" onclick="togglePlay(this, 4)" aria-label="Play">
+            <svg width="12" height="14" viewBox="0 0 12 14" fill="currentColor"><path d="M0 0 L0 14 L12 7 Z"/></svg>
+          </button>
+          <div class="audio-progress"><div class="audio-progress-fill" id="prog4"></div></div>
+          <div class="audio-time" id="time4">5:28</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="note-area">
+      <div class="note-pad">
+        <div class="note-pad-title">
+          <span>Main Idea · 主旨</span>
+          <button class="reset-link" onclick="clearNote('note1')">清空</button>
+        </div>
+        <textarea id="note1" placeholder="記下你聽到的核心論點..."></textarea>
+      </div>
+      <div class="note-pad">
+        <div class="note-pad-title">
+          <span>Details · 細節證據</span>
+          <button class="reset-link" onclick="clearNote('note2')">清空</button>
+        </div>
+        <textarea id="note2" placeholder="記下例子、年代、人名、數字..."></textarea>
+      </div>
+    </div>
+
+    <div style="margin-top: 40px; padding: 24px 32px; background: var(--paper-2); border-left: 3px solid var(--gold);">
+      <strong style="font-family:'Fraunces',serif; font-size:18px; font-style:italic;">聽力筆記原則</strong>
+      <p style="margin-top: 8px; color: var(--ink-2); font-size: 15px;">用縮寫、箭頭、符號取代完整單字。例如 → 表示因果,↑↓ 表示變化,△ 表示問題。專注於 <em>signal words</em>:<span style="font-family:'JetBrains Mono',monospace; font-size:13px;">however / for instance / in contrast / as a result</span> — 它們幾乎一定對應考點。</p>
+    </div>
+  </section>
+
+  <!-- ========== SPEAKING ========== -->
+  <section id="speaking">
+    <div class="section-header">
+      <div>
+        <span class="eyebrow">§ Four &nbsp;·&nbsp; Oratio</span>
+        <h2>口說<span class="italic-accent"> 操練</span></h2>
+      </div>
+      <p class="desc">四種題型,皆有準備與作答時限。建議使用手機錄音功能練習,事後檢視流暢度與發音。</p>
+    </div>
+
+    <div class="task-grid">
+      <div class="task-card">
+        <div class="task-num">i.</div>
+        <div class="task-label">INDEPENDENT TASK · 15s prep · 45s response</div>
+        <div class="task-title">Personal Choice</div>
+        <div class="task-prompt">Some people prefer to work in teams; others prefer to work alone. Which do you prefer, and why? Provide specific reasons and examples.</div>
+        <div class="timer-phase" id="phase1">READY</div>
+        <div class="timer-display" id="timer1">00:15</div>
+        <div class="timer-controls">
+          <button class="btn btn-primary" onclick="startSpeakingTimer(1, 15, 45)">開始準備</button>
+          <button class="btn btn-ghost" onclick="resetTimer(1)">重置</button>
+        </div>
+      </div>
+
+      <div class="task-card">
+        <div class="task-num">ii.</div>
+        <div class="task-label">INTEGRATED · READ+LISTEN · 30s prep · 60s response</div>
+        <div class="task-title">Campus Announcement</div>
+        <div class="task-prompt">After reading a campus notice about extended library hours and listening to a student's reaction, summarise the student's opinion and the reasons given.</div>
+        <div class="timer-phase" id="phase2">READY</div>
+        <div class="timer-display" id="timer2">00:30</div>
+        <div class="timer-controls">
+          <button class="btn btn-primary" onclick="startSpeakingTimer(2, 30, 60)">開始準備</button>
+          <button class="btn btn-ghost" onclick="resetTimer(2)">重置</button>
+        </div>
+      </div>
+
+      <div class="task-card">
+        <div class="task-num">iii.</div>
+        <div class="task-label">INTEGRATED · ACADEMIC · 30s prep · 60s response</div>
+        <div class="task-title">Cognitive Dissonance</div>
+        <div class="task-prompt">Using the example provided by the professor, explain the concept of cognitive dissonance and how it influences human behaviour.</div>
+        <div class="timer-phase" id="phase3">READY</div>
+        <div class="timer-display" id="timer3">00:30</div>
+        <div class="timer-controls">
+          <button class="btn btn-primary" onclick="startSpeakingTimer(3, 30, 60)">開始準備</button>
+          <button class="btn btn-ghost" onclick="resetTimer(3)">重置</button>
+        </div>
+      </div>
+
+      <div class="task-card">
+        <div class="task-num">iv.</div>
+        <div class="task-label">INTEGRATED · LECTURE · 20s prep · 60s response</div>
+        <div class="task-title">Plant Adaptations</div>
+        <div class="task-prompt">Using the two examples from the lecture, explain how desert plants adapt to survive water scarcity.</div>
+        <div class="timer-phase" id="phase4">READY</div>
+        <div class="timer-display" id="timer4">00:20</div>
+        <div class="timer-controls">
+          <button class="btn btn-primary" onclick="startSpeakingTimer(4, 20, 60)">開始準備</button>
+          <button class="btn btn-ghost" onclick="resetTimer(4)">重置</button>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top: 40px; padding: 24px 32px; background: var(--paper-2); border-left: 3px solid var(--gold);">
+      <strong style="font-family:'Fraunces',serif; font-size:18px; font-style:italic;">高分回答結構</strong>
+      <p style="margin-top: 8px; color: var(--ink-2); font-size: 15px;"><span style="font-family:'JetBrains Mono',monospace; font-size:13px;">立場 (5s) → 理由一 (15-18s) → 例證一 (10s) → 理由二 (15-18s) → 收尾</span>。避免長停頓;若卡住,使用 <em>"What I mean is..."</em> 或 <em>"To put it another way..."</em> 填補並重整思緒。</p>
+    </div>
+  </section>
+
+  <!-- ========== WRITING ========== -->
+  <section id="writing">
+    <div class="section-header">
+      <div>
+        <span class="eyebrow">§ Five &nbsp;·&nbsp; Scriptio</span>
+        <h2>寫作<span class="italic-accent"> 工坊</span></h2>
+      </div>
+      <p class="desc">獨立寫作建議 300+ 字,整合寫作 150–225 字。下方計時器與字數統計可輔助實戰節奏。</p>
+    </div>
+
+    <div class="tabs">
+      <button class="tab active" onclick="switchWritingTab(this, 'independent')">獨立寫作 · 30 min</button>
+      <button class="tab" onclick="switchWritingTab(this, 'integrated')">整合寫作 · 20 min</button>
+      <button class="tab" onclick="switchWritingTab(this, 'samples')">範文結構</button>
+    </div>
+
+    <div id="independent" class="tab-content active">
+      <div class="quiz-question">
+        <div class="q-number">PROMPT</div>
+        <div class="quiz-prompt" style="font-size: 22px; line-height: 1.4;">Do you agree or disagree with the following statement?</div>
+        <p style="font-style: italic; color: var(--ink-2); font-size: 18px; margin-top: 16px; line-height: 1.6;">"Universities should require all students to take courses outside of their major field of study, even if those courses do not directly relate to their career goals."</p>
+        <p style="margin-top: 16px; color: var(--sepia); font-size: 14px;">Use specific reasons and examples to support your answer.</p>
+      </div>
+
+      <div class="writing-area">
+        <textarea class="writing-textarea" id="writingArea1" placeholder="Begin your essay here..." oninput="countWords('writingArea1', 'wordCount1')"></textarea>
+        <div class="writing-sidebar">
+          <div class="word-count-card">
+            <div class="word-count-num" id="wordCount1">0</div>
+            <div class="word-count-target">WORDS · TARGET 300+</div>
+          </div>
+          <div class="word-count-card">
+            <div class="timer-phase" style="text-align: left; margin-bottom: 8px;">TIME</div>
+            <div class="word-count-num" id="writingTime1">30:00</div>
+            <div class="timer-controls" style="margin-top: 12px;">
+              <button class="btn btn-primary" onclick="startWritingTimer(1, 30)">開始</button>
+              <button class="btn btn-ghost" onclick="resetWritingTimer(1, 30)">重置</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="integrated" class="tab-content">
+      <div class="quiz-question">
+        <div class="q-number">PROMPT</div>
+        <div class="quiz-prompt" style="font-size: 22px; line-height: 1.4;">Integrated Writing</div>
+        <p style="margin-top: 16px; color: var(--ink-2); line-height: 1.7;">The reading passage presents three arguments for why a four-day school week would benefit primary education. The lecture, however, challenges each of these points. Summarise the lecturer's objections, explaining how they cast doubt on the specific claims made in the reading.</p>
+        <p style="margin-top: 16px; color: var(--sepia); font-size: 14px;">建議字數 150–225。避免引入個人意見。</p>
+      </div>
+
+      <div class="writing-area">
+        <textarea class="writing-textarea" id="writingArea2" placeholder="The reading and the lecture both address..." oninput="countWords('writingArea2', 'wordCount2')"></textarea>
+        <div class="writing-sidebar">
+          <div class="word-count-card">
+            <div class="word-count-num" id="wordCount2">0</div>
+            <div class="word-count-target">WORDS · TARGET 150–225</div>
+          </div>
+          <div class="word-count-card">
+            <div class="timer-phase" style="text-align: left; margin-bottom: 8px;">TIME</div>
+            <div class="word-count-num" id="writingTime2">20:00</div>
+            <div class="timer-controls" style="margin-top: 12px;">
+              <button class="btn btn-primary" onclick="startWritingTimer(2, 20)">開始</button>
+              <button class="btn btn-ghost" onclick="resetWritingTimer(2, 20)">重置</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="samples" class="tab-content">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px;" class="samples-grid">
+        <div class="strategy-item" style="border:1px solid var(--rule); padding: 32px;">
+          <div class="strategy-num">I</div>
+          <div class="strategy-title">獨立寫作五段式</div>
+          <p style="font-size:15px; color:var(--sepia); line-height:1.7;">
+            <strong style="color:var(--ink); font-family:'JetBrains Mono',monospace; font-size:12px;">¶1 INTRO</strong> — 背景 + 立場句 (thesis)<br>
+            <strong style="color:var(--ink); font-family:'JetBrains Mono',monospace; font-size:12px;">¶2 BODY 1</strong> — 主理由 + 具體例證<br>
+            <strong style="color:var(--ink); font-family:'JetBrains Mono',monospace; font-size:12px;">¶3 BODY 2</strong> — 次理由 + 數據或經驗<br>
+            <strong style="color:var(--ink); font-family:'JetBrains Mono',monospace; font-size:12px;">¶4 CONCESSION</strong> — 承認對立觀點再反駁<br>
+            <strong style="color:var(--ink); font-family:'JetBrains Mono',monospace; font-size:12px;">¶5 CONCLUSION</strong> — 重申立場 + 延伸
+          </p>
+        </div>
+        <div class="strategy-item" style="border:1px solid var(--rule); padding: 32px;">
+          <div class="strategy-num">II</div>
+          <div class="strategy-title">整合寫作四段式</div>
+          <p style="font-size:15px; color:var(--sepia); line-height:1.7;">
+            <strong style="color:var(--ink); font-family:'JetBrains Mono',monospace; font-size:12px;">¶1</strong> — 點出閱讀立場與聽力反駁立場<br>
+            <strong style="color:var(--ink); font-family:'JetBrains Mono',monospace; font-size:12px;">¶2</strong> — 第一組:reading 論點 → lecture 反駁<br>
+            <strong style="color:var(--ink); font-family:'JetBrains Mono',monospace; font-size:12px;">¶3</strong> — 第二組:對應拆解<br>
+            <strong style="color:var(--ink); font-family:'JetBrains Mono',monospace; font-size:12px;">¶4</strong> — 第三組:對應拆解
+          </p>
+          <p style="margin-top: 12px; font-size: 13px; color: var(--oxblood); font-style: italic;">關鍵句型:The lecturer refutes / challenges / undermines this by arguing that...</p>
+        </div>
+        <div class="strategy-item" style="border:1px solid var(--rule); padding: 32px;">
+          <div class="strategy-num">III</div>
+          <div class="strategy-title">進階轉折詞庫</div>
+          <p style="font-size:15px; color:var(--sepia); line-height:1.7;">
+            <strong style="color:var(--ink); font-family:'JetBrains Mono',monospace; font-size:12px;">CONTRAST</strong> conversely · nevertheless · albeit<br>
+            <strong style="color:var(--ink); font-family:'JetBrains Mono',monospace; font-size:12px;">CAUSE</strong> consequently · thereby · insofar as<br>
+            <strong style="color:var(--ink); font-family:'JetBrains Mono',monospace; font-size:12px;">EMPHASIS</strong> indeed · notably · in particular<br>
+            <strong style="color:var(--ink); font-family:'JetBrains Mono',monospace; font-size:12px;">ADD</strong> moreover · furthermore · what is more
+          </p>
+        </div>
+        <div class="strategy-item" style="border:1px solid var(--rule); padding: 32px;">
+          <div class="strategy-num">IV</div>
+          <div class="strategy-title">高分句型範例</div>
+          <p style="font-size:15px; color:var(--sepia); line-height:1.7; font-style:italic;">
+            "While it is tempting to assume X, a closer examination reveals Y."<br><br>
+            "Not only does this approach... but it also..."<br><br>
+            "It is precisely this tension between A and B that..."<br><br>
+            "Far from being trivial, this distinction has profound implications for..."
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXAM ARCHIVE ========== -->
+  <section id="exam">
+    <div class="section-header">
+      <div>
+        <span class="eyebrow">§ Six &nbsp;·&nbsp; Examinatio</span>
+        <h2>真題<span class="italic-accent"> 演練</span></h2>
+      </div>
+      <p class="desc">收錄 20 套近期 TPO 風格模擬卷與主題模考,涵蓋自然科學、人文社會、商業與心理學等領域。每套包含完整四大科目。</p>
+    </div>
+
+    <div class="archive-filters">
+      <button class="filter-btn active" onclick="filterArchive(this, 'all')">全部 <span class="count">20</span></button>
+      <button class="filter-btn" onclick="filterArchive(this, 'latest')">最新 <span class="count">4</span></button>
+      <button class="filter-btn" onclick="filterArchive(this, 'tpo')">TPO 系列 <span class="count">14</span></button>
+      <button class="filter-btn" onclick="filterArchive(this, 'theme')">主題模考 <span class="count">4</span></button>
+      <button class="filter-btn" onclick="filterArchive(this, 'diag')">診斷測驗 <span class="count">2</span></button>
+      <button class="filter-btn" onclick="filterArchive(this, 'completed')">已完成 <span class="count">5</span></button>
+    </div>
+
+    <div class="archive-grid" id="archiveGrid">
+      <!-- Latest -->
+      <div class="archive-card" data-cat="tpo latest" onclick="launchExam('TPO-71')">
+        <div class="test-num">TPO · 71 &nbsp;·&nbsp; NEW</div>
+        <div class="test-title">Cognitive Linguistics &amp; the Mind</div>
+        <div class="test-meta">語言學 × 認知科學 · 最新釋出題型</div>
+        <div class="test-footer">
+          <div>
+            <div class="test-difficulty">★★★★☆ HARD</div>
+            <div class="test-score" style="margin-top: 8px; color: var(--sepia);">— —</div>
+          </div>
+          <div class="test-status new">未開始</div>
+        </div>
+      </div>
+
+      <div class="archive-card" data-cat="tpo latest" onclick="launchExam('TPO-70')">
+        <div class="test-num">TPO · 70 &nbsp;·&nbsp; NEW</div>
+        <div class="test-title">Urban Planning &amp; Garden Cities</div>
+        <div class="test-meta">都市規劃 × 社會學 · 中等長度文本</div>
+        <div class="test-footer">
+          <div>
+            <div class="test-difficulty">★★★☆☆ MEDIUM</div>
+            <div class="test-score" style="margin-top: 8px; color: var(--sepia);">— —</div>
+          </div>
+          <div class="test-status new">未開始</div>
+        </div>
+      </div>
+
+      <div class="archive-card" data-cat="tpo latest" onclick="launchExam('TPO-69')">
+        <div class="test-num">TPO · 69 &nbsp;·&nbsp; NEW</div>
+        <div class="test-title">Microbial Symbiosis</div>
+        <div class="test-meta">微生物學 × 演化生物學 · 字彙密度高</div>
+        <div class="test-footer">
+          <div>
+            <div class="test-difficulty">★★★★☆ HARD</div>
+            <div class="test-score" style="margin-top: 8px; color: var(--sepia);">— —</div>
+          </div>
+          <div class="test-status new">未開始</div>
+        </div>
+      </div>
+
+      <div class="archive-card" data-cat="tpo latest completed" onclick="launchExam('TPO-68')">
+        <div class="test-num">TPO · 68</div>
+        <div class="test-title">Behavioural Economics &amp; Choice</div>
+        <div class="test-meta">心理學 × 商業 · 整合寫作較有挑戰</div>
+        <div class="test-footer">
+          <div>
+            <div class="test-difficulty">★★★★☆ HARD</div>
+            <div class="test-score" style="margin-top: 8px;">94<span class="max">/120</span></div>
+          </div>
+          <div class="test-status completed">已完成</div>
+        </div>
+      </div>
+
+      <!-- TPO Core -->
+      <div class="archive-card" data-cat="tpo" onclick="launchExam('TPO-67')">
+        <div class="test-num">TPO · 67</div>
+        <div class="test-title">Quantum Mechanics for Non-Majors</div>
+        <div class="test-meta">物理 × 哲學 · 概念抽象、字彙艱深</div>
+        <div class="test-footer">
+          <div>
+            <div class="test-difficulty">★★★★★ EXPERT</div>
+            <div class="test-score" style="margin-top: 8px; color: var(--sepia);">— —</div>
+          </div>
+          <div class="test-status new">未開始</div>
+        </div>
+      </div>
+
+      <div class="archive-card" data-cat="tpo completed" onclick="launchExam('TPO-66')">
+        <div class="test-num">TPO · 66</div>
+        <div class="test-title">Ancient Trade Routes</div>
+        <div class="test-meta">歷史 × 考古學 · 長篇閱讀練習</div>
+        <div class="test-footer">
+          <div>
+            <div class="test-difficulty">★★★☆☆ MEDIUM</div>
+            <div class="test-score" style="margin-top: 8px;">92<span class="max">/120</span></div>
+          </div>
+          <div class="test-status completed">已完成</div>
+        </div>
+      </div>
+
+      <div class="archive-card" data-cat="tpo completed" onclick="launchExam('TPO-65')">
+        <div class="test-num">TPO · 65</div>
+        <div class="test-title">Climate Models &amp; Migration Patterns</div>
+        <div class="test-meta">氣候科學 × 人口地理 · 學術主題密度高</div>
+        <div class="test-footer">
+          <div>
+            <div class="test-difficulty">★★★★☆ HARD</div>
+            <div class="test-score" style="margin-top: 8px;">89<span class="max">/120</span></div>
+          </div>
+          <div class="test-status completed">已完成</div>
+        </div>
+      </div>
+
+      <div class="archive-card" data-cat="tpo completed" onclick="launchExam('TPO-64')">
+        <div class="test-num">TPO · 64</div>
+        <div class="test-title">Renaissance Patronage &amp; Cellular Biology</div>
+        <div class="test-meta">藝術史 × 細胞生物學 · 含 1 對話 + 2 講座</div>
+        <div class="test-footer">
+          <div>
+            <div class="test-difficulty">★★★☆☆ MEDIUM</div>
+            <div class="test-score" style="margin-top: 8px;">96<span class="max">/120</span></div>
+          </div>
+          <div class="test-status completed">已完成</div>
+        </div>
+      </div>
+
+      <div class="archive-card" data-cat="tpo" onclick="launchExam('TPO-63')">
+        <div class="test-num">TPO · 63</div>
+        <div class="test-title">The Industrial Revolution</div>
+        <div class="test-meta">經濟史 × 科技史 · 因果結構複雜</div>
+        <div class="test-footer">
+          <div>
+            <div class="test-difficulty">★★★☆☆ MEDIUM</div>
+            <div class="test-score" style="margin-top: 8px; color: var(--sepia);">— —</div>
+          </div>
+          <div class="test-status new">未開始</div>
+        </div>
+      </div>
+
+      <div class="archive-card" data-cat="tpo" onclick="launchExam('TPO-62')">
+        <div class="test-num">TPO · 62</div>
+        <div class="test-title">Animal Communication Systems</div>
+        <div class="test-meta">動物行為學 × 神經科學</div>
+        <div class="test-footer">
+          <div>
+            <div class="test-difficulty">★★★★☆ HARD</div>
+            <div class="test-score" style="margin-top: 8px; color: var(--gold-deep);">— —</div>
+          </div>
+          <div class="test-status in-progress">進行中</div>
+        </div>
+      </div>
+
+      <div class="archive-card" data-cat="tpo" onclick="launchExam('TPO-61')">
+        <div class="test-num">TPO · 61</div>
+        <div class="test-title">Ancient Greek Theatre</div>
+        <div class="test-meta">戲劇史 × 古典文學 · 文學鑑賞</div>
+        <div class="test-footer">
+          <div>
+            <div class="test-difficulty">★★★☆☆ MEDIUM</div>
+            <div class="test-score" style="margin-top: 8px; color: var(--sepia);">— —</div>
+          </div>
+          <div class="test-status new">未開始</div>
+        </div>
+      </div>
+
+      <div class="archive-card" data-cat="tpo" onclick="launchExam('TPO-60')">
+        <div class="test-num">TPO · 60</div>
+        <div class="test-title">Glacial Geology</div>
+        <div class="test-meta">地質學 × 古氣候學 · 入門難度</div>
+        <div class="test-footer">
+          <div>
+            <div class="test-difficulty">★★☆☆☆ EASY</div>
+            <div class="test-score" style="margin-top: 8px; color: var(--sepia);">— —</div>
+          </div>
+          <div class="test-status new">未開始</div>
+        </div>
+      </div>
+
+      <div class="archive-card" data-cat="tpo" onclick="launchExam('TPO-59')">
+        <div class="test-num">TPO · 59</div>
+        <div class="test-title">Astronomy: Exoplanets</div>
+        <div class="test-meta">天文學 × 行星科學</div>
+        <div class="test-footer">
+          <div>
+            <div class="test-difficulty">★★★☆☆ MEDIUM</div>
+            <div class="test-score" style="margin-top: 8px; color: var(--sepia);">— —</div>
+          </div>
+          <div class="test-status new">未開始</div>
+        </div>
+      </div>
+
+      <div class="archive-card" data-cat="tpo" onclick="launchExam('TPO-58')">
+        <div class="test-num">TPO · 58</div>
+        <div class="test-title">Photography as Art</div>
+        <div class="test-meta">藝術史 × 媒材研究</div>
+        <div class="test-footer">
+          <div>
+            <div class="test-difficulty">★★★☆☆ MEDIUM</div>
+            <div class="test-score" style="margin-top: 8px; color: var(--sepia);">— —</div>
+          </div>
+          <div class="test-status new">未開始</div>
+        </div>
+      </div>
+
+      <!-- Themed Mocks -->
+      <div class="archive-card" data-cat="theme completed" onclick="launchExam('MOCK-A')">
+        <div class="test-num">MOCK · A</div>
+        <div class="test-title">Composite Assessment</div>
+        <div class="test-meta">綜合模考 · 全方位實戰</div>
+        <div class="test-footer">
+          <div>
+            <div class="test-difficulty">★★★★☆ HARD</div>
+            <div class="test-score" style="margin-top: 8px;">87<span class="max">/120</span></div>
+          </div>
+          <div class="test-status completed">已完成</div>
+        </div>
+      </div>
+
+      <div class="archive-card" data-cat="theme" onclick="launchExam('MOCK-B')">
+        <div class="test-num">MOCK · B</div>
+        <div class="test-title">Science-Heavy Mock</div>
+        <div class="test-meta">理工主題集中 · 物化生地</div>
+        <div class="test-footer">
+          <div>
+            <div class="test-difficulty">★★★★★ EXPERT</div>
+            <div class="test-score" style="margin-top: 8px; color: var(--sepia);">— —</div>
+          </div>
+          <div class="test-status new">未開始</div>
+        </div>
+      </div>
+
+      <div class="archive-card" data-cat="theme" onclick="launchExam('MOCK-C')">
+        <div class="test-num">MOCK · C</div>
+        <div class="test-title">Humanities-Heavy Mock</div>
+        <div class="test-meta">人文社科集中 · 文史哲</div>
+        <div class="test-footer">
+          <div>
+            <div class="test-difficulty">★★★★☆ HARD</div>
+            <div class="test-score" style="margin-top: 8px; color: var(--sepia);">— —</div>
+          </div>
+          <div class="test-status new">未開始</div>
+        </div>
+      </div>
+
+      <div class="archive-card" data-cat="theme" onclick="launchExam('MOCK-D')">
+        <div class="test-num">MOCK · D</div>
+        <div class="test-title">Business &amp; Society</div>
+        <div class="test-meta">商管心理綜合 · 整合題型</div>
+        <div class="test-footer">
+          <div>
+            <div class="test-difficulty">★★★☆☆ MEDIUM</div>
+            <div class="test-score" style="margin-top: 8px; color: var(--sepia);">— —</div>
+          </div>
+          <div class="test-status new">未開始</div>
+        </div>
+      </div>
+
+      <!-- Diagnostics -->
+      <div class="archive-card" data-cat="diag" onclick="launchExam('DIAG-01')">
+        <div class="test-num">DIAG · 01</div>
+        <div class="test-title">Quick Diagnostic</div>
+        <div class="test-meta">15 分鐘快速診斷 · 找出弱項</div>
+        <div class="test-footer">
+          <div>
+            <div class="test-difficulty">★★☆☆☆ EASY</div>
+            <div class="test-score" style="margin-top: 8px; color: var(--sepia);">— —</div>
+          </div>
+          <div class="test-status new">未開始</div>
+        </div>
+      </div>
+
+      <div class="archive-card" data-cat="diag" onclick="launchExam('DIAG-02')">
+        <div class="test-num">DIAG · 02</div>
+        <div class="test-title">Vocabulary Stress Test</div>
+        <div class="test-meta">字彙壓力測驗 · 高難度詞義辨析</div>
+        <div class="test-footer">
+          <div>
+            <div class="test-difficulty">★★★★☆ HARD</div>
+            <div class="test-score" style="margin-top: 8px; color: var(--sepia);">— —</div>
+          </div>
+          <div class="test-status new">未開始</div>
+        </div>
+      </div>
+
+      <div class="archive-empty" id="archiveEmpty">此分類目前沒有測驗。</div>
+    </div>
+
+    <div class="mock-launcher">
+      <div>
+        <span class="eyebrow">FULL SIMULATION</span>
+        <h3>不只練題,更模擬<br>真實考場節奏。</h3>
+        <p>從入場指示到最後一秒收筆,完整重現考試流程。系統會記錄你每題作答時間、各科準確率,並給出 0–120 分換算分數與診斷報告。</p>
+        <button class="btn-launch" onclick="launchExam('FULL-MOCK')">啟動完整模考</button>
+      </div>
+      <div class="launch-stats">
+        <div>
+          DURATION
+          <strong>~ 1 hr 50 min</strong>
+        </div>
+        <div>
+          SECTIONS
+          <strong>4 sections · 演練版</strong>
+        </div>
+        <div>
+          LAST ATTEMPT
+          <strong>96 / 120</strong>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top: 40px; padding: 24px 32px; background: var(--paper-2); border-left: 3px solid var(--gold);">
+      <strong style="font-family:'Fraunces',serif; font-size:18px; font-style:italic;">演練建議</strong>
+      <p style="margin-top: 8px; color: var(--ink-2); font-size: 15px;">真題演練不在於數量,而在於 <em>review 的深度</em>。每做完一套,至少花 <span style="font-family:'JetBrains Mono',monospace; font-size:13px;">90 分鐘</span> 回顧:錯題分類(粗心 / 字彙不足 / 結構未抓住 / 推論偏差),整理一份個人 error log。一週只做 1–2 套並徹底檢討,遠勝一週狂刷 5 套卻沒回頭看。</p>
+    </div>
+  </section>
+
+  <!-- ========== STRATEGY ========== -->
+  <section id="strategy">
+    <div class="section-header">
+      <div>
+        <span class="eyebrow">§ Seven &nbsp;·&nbsp; Strategia</span>
+        <h2>實戰<span class="italic-accent"> 心法</span></h2>
+      </div>
+      <p class="desc">考前一個月的衝刺重點。從時間分配到考場心態,六條原則助你穩定發揮。</p>
+    </div>
+
+    <div class="strategy-grid">
+      <div class="strategy-item">
+        <div class="strategy-num">I</div>
+        <div class="strategy-title">不要為一題糾結</div>
+        <p class="strategy-desc">閱讀每題平均約 90 秒。若一題思考超過 2 分鐘仍無頭緒,標記後跳過。寧可放棄一題,不可拖垮整篇。</p>
+      </div>
+      <div class="strategy-item">
+        <div class="strategy-num">II</div>
+        <div class="strategy-title">聽力先抓骨架</div>
+        <p class="strategy-desc">講座前 30 秒幾乎一定包含主旨。專注聆聽教授使用 <em>"Today we'll look at..."</em> 或 <em>"The key idea here is..."</em> 等訊號句。</p>
+      </div>
+      <div class="strategy-item">
+        <div class="strategy-num">III</div>
+        <div class="strategy-title">口說模板靈活用</div>
+        <p class="strategy-desc">模板是骨架不是肉。"In my opinion" 可換成 "I tend to believe" / "It seems to me that"。考官會聽出生硬背誦。</p>
+      </div>
+      <div class="strategy-item">
+        <div class="strategy-num">IV</div>
+        <div class="strategy-title">寫作先框架後填肉</div>
+        <p class="strategy-desc">前 3 分鐘用 bullet points 列大綱:立場 + 兩個理由 + 各自的具體例證。寫作中思路不會卡頓。</p>
+      </div>
+      <div class="strategy-item">
+        <div class="strategy-num">V</div>
+        <div class="strategy-title">考前 48 小時減量</div>
+        <p class="strategy-desc">不要臨時抱佛腳。考前兩天降到每日 1 小時複習,重點是睡眠與作息調整。大腦在飽和狀態下無法精準反應。</p>
+      </div>
+      <div class="strategy-item">
+        <div class="strategy-num">VI</div>
+        <div class="strategy-title">心態 ≥ 實力</div>
+        <p class="strategy-desc">考試焦慮會吞噬 5–10 分。練習時就模擬真實環境:戴耳機、開計時器、不喝水。讓考場成為熟悉的場景。</p>
+      </div>
+    </div>
+
+    <div class="divider">· · ·</div>
+  </section>
+
+</main>
+
+<!-- ========== EXAM OVERLAY ========== -->
+<div class="exam-overlay" id="examOverlay">
+  <div class="exam-header">
+    <div class="exam-section-name">
+      <span class="section-mark" id="examMark">TEST</span>
+      <span id="examSectionName">Loading...</span>
+    </div>
+    <div class="exam-progress" id="examProgress"></div>
+    <div style="display:flex; gap:16px; align-items:center;">
+      <div class="exam-timer" id="examTimer">--:--</div>
+      <button class="exam-quit" onclick="quitExam()">EXIT</button>
+    </div>
+  </div>
+
+  <div class="exam-body">
+    <div class="exam-inner">
+      <!-- INTRO -->
+      <div class="exam-section-content active" id="examIntro">
+        <div class="exam-intro">
+          <span class="result-eyebrow" id="introTestId">TPO · 64</span>
+          <h2 id="introTitle">Welcome to the Examination</h2>
+          <p>本次模考共 4 個科目,合計約 35 分鐘的演練版。請確認你處於安靜環境,並準備好紙筆做筆記。</p>
+          <div class="exam-instructions">
+            <h4>INSTRUCTIONS · 注意事項</h4>
+            <ol>
+              <li>計時器啟動後不可暫停。每科時間用完將自動跳至下一科。</li>
+              <li>口說與聽力題會模擬實際情境,請使用耳機以獲得最佳體驗。</li>
+              <li>完成所有科目後將顯示換算分數(0–120)與診斷建議。</li>
+              <li>若臨時退出,進度將不會保留。</li>
+            </ol>
+          </div>
+          <button class="btn-launch" onclick="startExam()" style="background: var(--ink); color: var(--paper);">開始作答</button>
+        </div>
+      </div>
+
+      <!-- READING -->
+      <div class="exam-section-content" id="examReading">
+        <div class="exam-reading-layout">
+          <div class="exam-passage">
+            <h3 id="examPassageTitle">Loading...</h3>
+            <div id="examPassageBody"></div>
+          </div>
+          <div>
+            <div class="exam-question-block">
+              <div class="q-number" id="rqNum">QUESTION 1 / 3</div>
+              <div class="q-text" id="rqText">According to the passage, why is writing considered fundamentally different from spoken language?</div>
+              <div class="quiz-options" id="rqOptions"></div>
+            </div>
+            <button class="btn btn-primary" style="margin-top: 16px; width: 100%;" onclick="nextReadingQuestion()">下一題 →</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- LISTENING -->
+      <div class="exam-section-content" id="examListening">
+        <div class="exam-listening-stage">
+          <div class="audio-disc" id="audioDisc"></div>
+          <div class="listening-track-title" id="examListenTitle">Geology Lecture</div>
+          <div class="listening-track-sub" id="examListenSub">DURATION 4:30 · PROFESSOR + STUDENT Q&amp;A</div>
+          <button class="btn btn-primary" id="listenBtn" onclick="toggleListening()">▶ 播放</button>
+          <p style="margin-top: 24px; font-size: 14px; color: var(--sepia); font-style: italic;">建議用紙筆記下主旨、例證、訊號詞。播放完畢後將顯示題目。</p>
+        </div>
+        <div id="listeningQuestions" style="display: none;">
+          <div class="exam-question-block">
+            <div class="q-number" id="lqNum">QUESTION 1 / 2</div>
+            <div class="q-text" id="lqText">What is the main topic of the lecture?</div>
+            <div class="quiz-options" id="lqOptions"></div>
+            <button class="btn btn-primary" style="margin-top: 24px;" onclick="nextListeningQuestion()">下一題 →</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- SPEAKING -->
+      <div class="exam-section-content" id="examSpeaking">
+        <div class="exam-speaking-prompt">
+          <span class="result-eyebrow">SPEAKING · INDEPENDENT TASK</span>
+          <h3 id="examSpeakTitle" style="font-family: 'Fraunces', serif; font-size: 28px; font-weight: 400; margin: 16px 0;">Personal Preference</h3>
+          <p id="examSpeakPrompt" style="font-size: 18px; color: var(--ink-2); max-width: 580px; margin: 0 auto; line-height: 1.6;">Loading prompt...</p>
+        </div>
+        <div style="text-align: center; padding: 32px; background: var(--paper-2); border: 1px solid var(--rule);">
+          <div class="timer-phase" id="speakPhase">READY</div>
+          <div class="timer-display" id="speakTimer">00:15</div>
+          <div style="display: flex; gap: 12px; justify-content: center; margin-top: 16px; flex-wrap: wrap;">
+            <button class="btn btn-primary" onclick="startExamSpeaking()">開始準備</button>
+            <button class="btn btn-ghost" onclick="skipExamSpeaking()">跳過至下一科 →</button>
+          </div>
+          <p style="margin-top: 20px; font-size: 13px; color: var(--sepia); font-style: italic;">準備 15 秒 · 作答 45 秒。可使用裝置內建錄音功能。</p>
+        </div>
+      </div>
+
+      <!-- WRITING -->
+      <div class="exam-section-content" id="examWriting">
+        <div class="exam-speaking-prompt" style="text-align: left;">
+          <span class="result-eyebrow">WRITING · ACADEMIC DISCUSSION</span>
+          <h3 id="examWriteTitle" style="font-family: 'Fraunces', serif; font-size: 28px; font-weight: 400; margin: 16px 0;">Online Discussion Post</h3>
+          <p id="examWritePrompt" style="font-size: 16px; color: var(--ink-2); line-height: 1.7; margin-bottom: 16px;">Loading prompt...</p>
+          <p style="font-size: 14px; color: var(--sepia); font-style: italic;">Write a response of at least 100 words, clearly stating your position with reasoning.</p>
+        </div>
+        <div class="exam-writing-area">
+          <textarea class="writing-textarea" id="examWritingArea" placeholder="In my opinion..." oninput="countWords('examWritingArea', 'examWordCount')" style="min-height: 320px;"></textarea>
+          <div class="writing-sidebar">
+            <div class="word-count-card">
+              <div class="word-count-num" id="examWordCount">0</div>
+              <div class="word-count-target">WORDS · TARGET 100+</div>
+            </div>
+            <button class="btn btn-primary" onclick="submitExam()">提交模考 →</button>
+            <button class="btn btn-ghost" onclick="quitExam()">放棄退出</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- RESULT -->
+      <div class="exam-section-content" id="examResult">
+        <div class="exam-result active">
+          <div class="result-eyebrow">SCORE REPORT</div>
+          <h2 class="result-title">Your <span class="italic-accent">band</span></h2>
+          <div class="result-date" id="resultDate">2026.05.16</div>
+
+          <div class="result-score-display"><span id="resultTotal">98</span><span class="of-total"> /120</span></div>
+          <div class="result-band" id="resultBand">PROFICIENT · 進階水準</div>
+
+          <div class="result-breakdown">
+            <div class="result-section">
+              <div class="result-section-name">Reading</div>
+              <div class="result-section-score"><span id="scoreR">25</span><span class="max">/30</span></div>
+              <div class="result-section-bar"><div class="result-section-fill" id="barR"></div></div>
+              <div class="result-section-note" id="noteR">主旨題穩定,細節題仍有失分。</div>
+            </div>
+            <div class="result-section">
+              <div class="result-section-name">Listening</div>
+              <div class="result-section-score"><span id="scoreL">24</span><span class="max">/30</span></div>
+              <div class="result-section-bar"><div class="result-section-fill" id="barL"></div></div>
+              <div class="result-section-note" id="noteL">建議加強學術講座中段細節聽辨。</div>
+            </div>
+            <div class="result-section">
+              <div class="result-section-name">Speaking</div>
+              <div class="result-section-score"><span id="scoreS">24</span><span class="max">/30</span></div>
+              <div class="result-section-bar"><div class="result-section-fill" id="barS"></div></div>
+              <div class="result-section-note" id="noteS">流暢度良好,可豐富例證細節。</div>
+            </div>
+            <div class="result-section">
+              <div class="result-section-name">Writing</div>
+              <div class="result-section-score"><span id="scoreW">25</span><span class="max">/30</span></div>
+              <div class="result-section-bar"><div class="result-section-fill" id="barW"></div></div>
+              <div class="result-section-note" id="noteW">論證結構清晰,字彙可更精準。</div>
+            </div>
+          </div>
+
+          <div class="result-insights">
+            <h4>DIAGNOSIS · 診斷建議</h4>
+            <p id="diagnosisText">你的整體表現已達 100 分前段水準。優先強化「Listening 學術講座細節題」與「Writing 學術用詞精準度」,可推升至 105+。下次練習建議排定 TPO 65 或 67 加強科學主題。</p>
+          </div>
+
+          <div class="result-actions">
+            <button class="review-cta" onclick="openReview()">查看詳解與檢討</button>
+          </div>
+          <div class="result-actions" style="margin-top: 16px;">
+            <button class="btn btn-ghost" onclick="quitExam()">返回首頁</button>
+            <button class="btn btn-ghost" onclick="retakeExam()">再次挑戰</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- REVIEW -->
+      <div class="exam-section-content" id="examReview">
+        <div class="review-container">
+          <div class="review-header">
+            <span class="result-eyebrow">REVIEW &amp; ANALYSIS</span>
+            <h2>詳解與<span class="italic-accent"> 檢討</span></h2>
+            <p>逐題解析、錯題分析、口說寫作範文與自我檢核表。建議在做完模考的當天就完成檢討,趁記憶尚清晰。</p>
+          </div>
+
+          <div class="review-tabs">
+            <button class="review-tab active" onclick="switchReviewTab(this, 'reviewReading')">閱讀 <span class="accuracy" id="raccR">— —</span></button>
+            <button class="review-tab" onclick="switchReviewTab(this, 'reviewListening')">聽力 <span class="accuracy" id="raccL">— —</span></button>
+            <button class="review-tab" onclick="switchReviewTab(this, 'reviewSpeaking')">口說</button>
+            <button class="review-tab" onclick="switchReviewTab(this, 'reviewWriting')">寫作</button>
+            <button class="review-tab" onclick="switchReviewTab(this, 'reviewSummary')">總結 + 訓練計畫</button>
+          </div>
+
+          <div class="review-section active" id="reviewReading"></div>
+          <div class="review-section" id="reviewListening"></div>
+          <div class="review-section" id="reviewSpeaking"></div>
+          <div class="review-section" id="reviewWriting"></div>
+          <div class="review-section" id="reviewSummary"></div>
+
+          <div style="margin-top: 48px; text-align: center; padding-top: 32px; border-top: 1px solid var(--rule);">
+            <button class="btn btn-ghost" onclick="backToResult()">← 返回成績</button>
+            <button class="btn btn-primary" onclick="quitExam()" style="margin-left: 12px;">完成檢討</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="exam-footer">
+    <div class="exam-footer-info" id="examFooterInfo">Section 1 of 4 · Reading</div>
+    <div class="exam-progress" id="examProgress2"></div>
+    <div class="exam-footer-info">SCHOLASTICA · MOCK EXAM</div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <p>SCHOLASTICA &nbsp;·&nbsp; TOEFL PREP &nbsp;·&nbsp; MMXXVI</p>
+    <p class="quote">"Sapere aude." — Dare to know.</p>
+    <p>EST. FOR LEARNERS</p>
+  </div>
+</footer>
+
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>

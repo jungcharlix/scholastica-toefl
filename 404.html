@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 — Scholastica</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #f4efe6;
+  --paper-2: #ebe4d5;
+  --ink: #1a1f2e;
+  --sepia: #6b6157;
+  --oxblood: #8b2942;
+  --rule: #c4b89e;
+  --gold: #b8945c;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Newsreader', Georgia, serif;
+  background: var(--paper);
+  color: var(--ink);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  background-image:
+    radial-gradient(at 20% 10%, rgba(184,148,92,0.06) 0px, transparent 50%),
+    radial-gradient(at 80% 80%, rgba(139,41,66,0.04) 0px, transparent 50%);
+}
+.container {
+  max-width: 580px;
+  text-align: center;
+}
+.eyebrow {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--oxblood);
+  margin-bottom: 16px;
+}
+h1 {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(96px, 18vw, 180px);
+  font-weight: 300;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  margin-bottom: 24px;
+}
+h1 em {
+  font-style: italic;
+  color: var(--oxblood);
+}
+p.lede {
+  font-size: 20px;
+  color: var(--sepia);
+  margin-bottom: 32px;
+  line-height: 1.5;
+}
+.divider {
+  color: var(--gold);
+  letter-spacing: 1em;
+  margin: 32px 0;
+}
+a.btn {
+  display: inline-block;
+  padding: 14px 32px;
+  background: var(--ink);
+  color: var(--paper);
+  text-decoration: none;
+  font-family: 'Newsreader', serif;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+a.btn:hover {
+  background: var(--oxblood);
+}
+.quote {
+  font-style: italic;
+  color: var(--sepia);
+  font-family: 'Fraunces', serif;
+  margin-top: 48px;
+  font-size: 16px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="eyebrow">Error · 404</div>
+  <h1>Lost in the <em>library</em></h1>
+  <p class="lede">這頁書頁不在書架上。也許你輸錯了書號,也許它從未被編目過。</p>
+  <div class="divider">· · ·</div>
+  <a class="btn" href="./">← 回到目錄</a>
+  <p class="quote">"Sapere aude." — Dare to know.</p>
+</div>
+</body>
+</html>

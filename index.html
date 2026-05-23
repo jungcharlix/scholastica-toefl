@@ -10,7 +10,7 @@
 <meta property="og:title" content="Scholastica — TOEFL 進階備考">
 <meta property="og:description" content="嚴選學術文本、實戰演練與精準回饋,將你的英文從「能溝通」推向「能論述」。">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#1a1f2e">
+<meta name="theme-color" content="#0e1e3f">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,0..100;1,9..144,300..900,0..100&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
@@ -95,7 +95,7 @@
         <span class="eyebrow">§ One &nbsp;·&nbsp; Lexicon</span>
         <h2>進階字彙<span class="italic-accent"> 學院</span></h2>
       </div>
-      <p class="desc">精選 30 個 TOEFL 高頻學術詞彙,涵蓋自然科學、人文社會與心理學領域。先以卡片熟悉,再進行測驗鞏固。</p>
+      <p class="desc">精選 <strong>314 個</strong> TOEFL 高頻學術詞彙,依語意分類:認知論證、因果影響、變化對比、量級程度、特質描述、科學方法、社會政治、美學藝術、經濟商業、環境自然、語篇連接等十多大類。先以卡片熟悉,手機可左右滑動切換。</p>
     </div>
 
     <div class="tabs">
@@ -123,11 +123,22 @@
           </div>
         </div>
         <div class="flashcard-controls">
-          <div class="card-counter"><span id="cardNum">1</span><span class="total"> / 30</span></div>
+          <div class="card-counter"><span id="cardNum">1</span><span class="total"> / <span id="cardTotal">314</span></span></div>
           <button class="btn btn-ghost" onclick="prevCard()">← 上一張</button>
           <button class="btn btn-primary" onclick="nextCard()">下一張 →</button>
           <button class="btn btn-ghost" onclick="shuffleCards()">⇆ 隨機排列</button>
         </div>
+      </div>
+
+      <div class="flashcard-swipe-hint">← 左右滑動切換 · 點擊翻面 →</div>
+      <div class="flashcard-mobile-nav">
+        <button class="nav-arrow" onclick="prevCard()" aria-label="上一張">← 上一張</button>
+        <div class="flashcard-mobile-counter"><span id="cardNumMobile">1</span> / <span id="cardTotalMobile">314</span></div>
+        <button class="nav-arrow primary" onclick="nextCard()" aria-label="下一張">下一張 →</button>
+      </div>
+      <div class="flashcard-mobile-nav" style="margin-top: 8px;">
+        <button class="nav-arrow" onclick="shuffleCards()" style="font-size: 14px;">⇆ 隨機排列</button>
+        <button class="nav-arrow" onclick="flipCard()" style="font-size: 14px;">↻ 翻面</button>
       </div>
     </div>
 

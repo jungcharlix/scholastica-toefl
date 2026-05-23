@@ -1,7 +1,7 @@
 # Scholastica — TOEFL 進階備考
 
 一個為目標 100+ 分的 TOEFL 考生打造的靜態網站。
-牛津/劍橋古典文書風格,純 HTML/CSS/JS,無框架依賴。
+**深藍學術風(Navy + Cream)**,純 HTML/CSS/JS,無框架依賴。
 
 🌐 **線上 Demo** → [https://jungcharlix.github.io/scholastica-toefl/](https://jungcharlix.github.io/scholastica-toefl/)
 
@@ -11,8 +11,8 @@
 ## ✦ 功能總覽
 
 ### § I  字彙學院
-- 30 個 TOEFL 進階字彙(`corroborate` / `ephemeral` / `mitigate` / `exacerbate` ...)
-- 可翻面字卡 · 隨機排列 · 五題字義測驗即時批改 · 雙欄詞彙總覽
+- **314 個 TOEFL 高頻學術詞彙**,依語意分類:認知論證、因果影響、變化對比、量級程度、特質描述、科學方法、社會政治、美學藝術、經濟商業、環境自然、語篇連接
+- 可翻面字卡 · **手機可左右滑動切換** · 隨機排列 · 20 題字義測驗即時批改 · 雙欄詞彙總覽
 
 ### § II  學術閱讀
 - TPO 風格全文(~700 字)

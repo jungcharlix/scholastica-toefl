@@ -30,6 +30,329 @@ const vocabulary = [
   { word: "feasible", pos: "adj.", pron: "/ˈfiːzəbl/", def: "可行的、行得通的", ex: "Solar power has become economically <em>feasible</em> in many regions." },
   { word: "intricate", pos: "adj.", pron: "/ˈɪntrɪkət/", def: "錯綜複雜的、繁複的", ex: "The brain's neural networks form <em>intricate</em> patterns." },
   { word: "subjugate", pos: "verb", pron: "/ˈsʌbdʒuɡeɪt/", def: "征服、使屈從", ex: "The empire sought to <em>subjugate</em> neighbouring peoples through military force." },
+
+  // ===== Cognition & Argument =====
+  { word: "cogent", pos: "adj.", pron: "/ˈkəʊdʒənt/", def: "(論點)有說服力的、邏輯清晰的", ex: "She presented a <em>cogent</em> case for tuition reform." },
+  { word: "discern", pos: "verb", pron: "/dɪˈsɜːn/", def: "辨識、看出(常需要努力觀察)", ex: "It is hard to <em>discern</em> the author's true intent." },
+{ word: "extrapolate", pos: "verb", pron: "/ɪkˈstræpəleɪt/", def: "外推、根據已知推斷未知", ex: "Researchers <em>extrapolated</em> the trend to predict future demand." },
+  { word: "infer", pos: "verb", pron: "/ɪnˈfɜː/", def: "推斷、推論", ex: "From the data, we can <em>infer</em> a strong correlation." },
+  { word: "postulate", pos: "verb", pron: "/ˈpɒstjʊleɪt/", def: "假設、設定為前提", ex: "Newton <em>postulated</em> a universal force of gravitation." },
+  { word: "refute", pos: "verb", pron: "/rɪˈfjuːt/", def: "駁斥、證明錯誤", ex: "New evidence <em>refutes</em> the long-held theory." },
+  { word: "rebut", pos: "verb", pron: "/rɪˈbʌt/", def: "反駁(論點)", ex: "The lawyer <em>rebutted</em> each of the opponent's claims." },
+  { word: "concede", pos: "verb", pron: "/kənˈsiːd/", def: "承認、讓步", ex: "Critics <em>concede</em> that the policy has had some success." },
+  { word: "construe", pos: "verb", pron: "/kənˈstruː/", def: "解讀、理解為", ex: "Her silence was <em>construed</em> as disapproval." },
+  { word: "conjecture", pos: "noun/verb", pron: "/kənˈdʒektʃə/", def: "推測、臆測", ex: "His theory was based on educated <em>conjecture</em>." },
+  { word: "rationalise", pos: "verb", pron: "/ˈræʃnəlaɪz/", def: "合理化、找藉口辯護", ex: "He <em>rationalised</em> the delay by citing technical problems." },
+  { word: "hypothesise", pos: "verb", pron: "/haɪˈpɒθəsaɪz/", def: "假設、提出假說", ex: "Scientists <em>hypothesise</em> that the comet originated beyond Pluto." },
+  { word: "deduce", pos: "verb", pron: "/dɪˈdjuːs/", def: "演繹、推導出", ex: "From the symptoms, the doctor <em>deduced</em> the cause." },
+  { word: "ascertain", pos: "verb", pron: "/ˌæsəˈteɪn/", def: "查明、確認", ex: "It is difficult to <em>ascertain</em> the exact figure." },
+  { word: "preclude", pos: "verb", pron: "/prɪˈkluːd/", def: "排除、使不可能", ex: "Lack of funding <em>precludes</em> further research." },
+  { word: "presuppose", pos: "verb", pron: "/ˌpriːsəˈpəʊz/", def: "預設、以…為前提", ex: "The argument <em>presupposes</em> that all parties act rationally." },
+  { word: "fathom", pos: "verb", pron: "/ˈfæðəm/", def: "完全理解、徹底搞清楚", ex: "It is hard to <em>fathom</em> the scale of the universe." },
+
+  // ===== Causation & Influence =====
+  { word: "engender", pos: "verb", pron: "/ɪnˈdʒendə/", def: "造成、引起(尤指情緒或情況)", ex: "The reform <em>engendered</em> widespread debate." },
+  { word: "precipitate", pos: "verb", pron: "/prɪˈsɪpɪteɪt/", def: "促成、使加速發生", ex: "The assassination <em>precipitated</em> the war." },
+  { word: "catalyse", pos: "verb", pron: "/ˈkætəlaɪz/", def: "催化、加速促成", ex: "The new policy <em>catalysed</em> innovation in the sector." },
+  { word: "underpin", pos: "verb", pron: "/ˌʌndəˈpɪn/", def: "支撐、構成基礎", ex: "Trust <em>underpins</em> all democratic institutions." },
+  { word: "undergird", pos: "verb", pron: "/ˌʌndəˈɡɜːd/", def: "支持、構成根基", ex: "Shared values <em>undergird</em> the community's identity." },
+  { word: "spawn", pos: "verb", pron: "/spɔːn/", def: "引發、產生(大量)", ex: "The novel <em>spawned</em> a series of films and merchandise." },
+  { word: "perpetuate", pos: "verb", pron: "/pəˈpetʃueɪt/", def: "使持續、延續", ex: "Stereotypes <em>perpetuate</em> social inequality." },
+  { word: "render", pos: "verb", pron: "/ˈrendə/", def: "使成為、使變得", ex: "The injury <em>rendered</em> her unable to compete." },
+  { word: "yield", pos: "verb", pron: "/jiːld/", def: "產生(結果)、屈服", ex: "The experiment <em>yielded</em> surprising results." },
+  { word: "stem from", pos: "phrase", pron: "/stem frɒm/", def: "源自、根源於", ex: "Many disorders <em>stem from</em> early childhood trauma." },
+  { word: "give rise to", pos: "phrase", pron: "/ɡɪv raɪz tʊ/", def: "引起、導致", ex: "Industrialisation <em>gave rise to</em> the modern city." },
+  { word: "trigger", pos: "verb", pron: "/ˈtrɪɡə/", def: "觸發、引發", ex: "The announcement <em>triggered</em> market panic." },
+  { word: "induce", pos: "verb", pron: "/ɪnˈdjuːs/", def: "誘發、勸誘", ex: "Meditation can <em>induce</em> a state of calm." },
+  { word: "instigate", pos: "verb", pron: "/ˈɪnstɪɡeɪt/", def: "策動、發起", ex: "The activists <em>instigated</em> a nationwide boycott." },
+
+  // ===== Change & Contrast =====
+  { word: "supplant", pos: "verb", pron: "/səˈplɑːnt/", def: "取代", ex: "Streaming services have largely <em>supplanted</em> physical media." },
+  { word: "supersede", pos: "verb", pron: "/ˌsuːpəˈsiːd/", def: "取代、淘汰", ex: "The new model <em>supersedes</em> all previous versions." },
+  { word: "transmute", pos: "verb", pron: "/trænzˈmjuːt/", def: "轉化、變質", ex: "Alchemists tried to <em>transmute</em> base metals into gold." },
+  { word: "diverge", pos: "verb", pron: "/daɪˈvɜːdʒ/", def: "分歧、偏離", ex: "The two species <em>diverged</em> millions of years ago." },
+  { word: "converge", pos: "verb", pron: "/kənˈvɜːdʒ/", def: "匯聚、趨同", ex: "Several lines of evidence <em>converge</em> on the same conclusion." },
+  { word: "permeate", pos: "verb", pron: "/ˈpɜːmieɪt/", def: "瀰漫、滲透", ex: "A sense of unease <em>permeated</em> the meeting." },
+  { word: "saturate", pos: "verb", pron: "/ˈsætʃəreɪt/", def: "使飽和、充滿", ex: "The market is <em>saturated</em> with similar products." },
+  { word: "metamorphose", pos: "verb", pron: "/ˌmetəˈmɔːfəʊz/", def: "蛻變、徹底改變", ex: "The caterpillar <em>metamorphoses</em> into a butterfly." },
+{ word: "deviate", pos: "verb", pron: "/ˈdiːvieɪt/", def: "偏離(常規)", ex: "The results <em>deviate</em> slightly from predictions." },
+  { word: "contrast with", pos: "phrase", pron: "/ˈkɒntrɑːst wɪð/", def: "與…形成對比", ex: "Her quiet demeanour <em>contrasts with</em> her bold writing." },
+  { word: "juxtapose", pos: "verb", pron: "/ˈdʒʌkstəpəʊz/", def: "並置、並列對照", ex: "The exhibition <em>juxtaposes</em> ancient and modern art." },
+  { word: "counteract", pos: "verb", pron: "/ˌkaʊntərˈækt/", def: "抵消、抗衡", ex: "Antioxidants <em>counteract</em> cell damage." },
+  { word: "offset", pos: "verb", pron: "/ˌɒfˈset/", def: "抵消、補償", ex: "Profits in one division <em>offset</em> losses in another." },
+
+  // ===== Magnitude & Quantity =====
+  { word: "myriad", pos: "noun/adj.", pron: "/ˈmɪriəd/", def: "無數的、大量的", ex: "The internet offers a <em>myriad</em> of resources." },
+  { word: "scant", pos: "adj.", pron: "/skænt/", def: "稀少的、不足的", ex: "There is <em>scant</em> evidence to support this claim." },
+  { word: "paucity", pos: "noun", pron: "/ˈpɔːsəti/", def: "缺乏、不足", ex: "A <em>paucity</em> of data hampers the analysis." },
+  { word: "dearth", pos: "noun", pron: "/dɜːθ/", def: "缺乏、匱乏", ex: "There is a <em>dearth</em> of qualified teachers in rural areas." },
+  { word: "abundance", pos: "noun", pron: "/əˈbʌndəns/", def: "豐富、大量", ex: "The region enjoys an <em>abundance</em> of natural resources." },
+  { word: "negligible", pos: "adj.", pron: "/ˈneɡlɪdʒəbl/", def: "微不足道的、可忽略的", ex: "The effect on prices was <em>negligible</em>." },
+  { word: "substantial", pos: "adj.", pron: "/səbˈstænʃl/", def: "相當大的、實質的", ex: "Researchers found <em>substantial</em> evidence of climate change." },
+  { word: "considerable", pos: "adj.", pron: "/kənˈsɪdərəbl/", def: "相當的、可觀的", ex: "The project required <em>considerable</em> investment." },
+  { word: "marginal", pos: "adj.", pron: "/ˈmɑːdʒɪnəl/", def: "微小的、邊緣的", ex: "The improvement was <em>marginal</em> at best." },
+  { word: "exorbitant", pos: "adj.", pron: "/ɪɡˈzɔːbɪtənt/", def: "過高的、過分的(尤指價格)", ex: "Critics called the fees <em>exorbitant</em>." },
+  { word: "copious", pos: "adj.", pron: "/ˈkəʊpiəs/", def: "豐富的、大量的", ex: "She took <em>copious</em> notes during the lecture." },
+  { word: "scarce", pos: "adj.", pron: "/skeəs/", def: "稀少的、缺乏的", ex: "Fresh water is becoming increasingly <em>scarce</em>." },
+// ===== Quality & Character =====
+  { word: "robust", pos: "adj.", pron: "/rəʊˈbʌst/", def: "穩健的、強健的", ex: "The study uses <em>robust</em> statistical methods." },
+  { word: "fragile", pos: "adj.", pron: "/ˈfrædʒaɪl/", def: "脆弱的、易碎的", ex: "Peace in the region remains <em>fragile</em>." },
+  { word: "resilient", pos: "adj.", pron: "/rɪˈzɪliənt/", def: "有韌性的、能迅速恢復的", ex: "The economy proved more <em>resilient</em> than expected." },
+  { word: "volatile", pos: "adj.", pron: "/ˈvɒlətaɪl/", def: "不穩定的、易變的", ex: "The stock market remains <em>volatile</em>." },
+  { word: "viable", pos: "adj.", pron: "/ˈvaɪəbl/", def: "可行的、能存活的", ex: "We need a <em>viable</em> alternative to fossil fuels." },
+  { word: "pragmatic", pos: "adj.", pron: "/præɡˈmætɪk/", def: "務實的、注重實效的", ex: "She took a <em>pragmatic</em> approach to the problem." },
+  { word: "meticulous", pos: "adj.", pron: "/məˈtɪkjələs/", def: "一絲不苟的、極細心的", ex: "The records were kept with <em>meticulous</em> care." },
+  { word: "rigorous", pos: "adj.", pron: "/ˈrɪɡərəs/", def: "嚴謹的、嚴格的", ex: "All findings undergo <em>rigorous</em> peer review." },
+  { word: "stringent", pos: "adj.", pron: "/ˈstrɪndʒənt/", def: "嚴格的、苛刻的", ex: "The regulations are particularly <em>stringent</em>." },
+  { word: "lenient", pos: "adj.", pron: "/ˈliːniənt/", def: "寬容的、寬大的", ex: "Critics say the punishment was too <em>lenient</em>." },
+  { word: "austere", pos: "adj.", pron: "/ɔːˈstɪə/", def: "嚴肅樸素的、簡樸的", ex: "The monastery had an <em>austere</em> beauty." },
+  { word: "ornate", pos: "adj.", pron: "/ɔːˈneɪt/", def: "華麗的、裝飾繁複的", ex: "The cathedral's <em>ornate</em> interior dazzles visitors." },
+  { word: "sublime", pos: "adj.", pron: "/səˈblaɪm/", def: "崇高的、極致的、壯麗的", ex: "The view from the summit was <em>sublime</em>." },
+  { word: "mundane", pos: "adj.", pron: "/mʌnˈdeɪn/", def: "平凡的、世俗的", ex: "Even <em>mundane</em> tasks require attention." },
+  { word: "trivial", pos: "adj.", pron: "/ˈtrɪviəl/", def: "瑣碎的、不重要的", ex: "Don't get distracted by <em>trivial</em> details." },
+  { word: "profound", pos: "adj.", pron: "/prəˈfaʊnd/", def: "深刻的、深遠的", ex: "Her work had a <em>profound</em> influence on the field." },
+  { word: "superficial", pos: "adj.", pron: "/ˌsuːpəˈfɪʃl/", def: "膚淺的、表面的", ex: "His knowledge of the subject is rather <em>superficial</em>." },
+  { word: "nuanced", pos: "adj.", pron: "/ˈnjuːɑːnst/", def: "細膩的、有微妙差別的", ex: "The novel offers a <em>nuanced</em> portrait of family life." },
+  { word: "exemplary", pos: "adj.", pron: "/ɪɡˈzempləri/", def: "堪稱典範的、優異的", ex: "Her conduct has been <em>exemplary</em>." },
+  { word: "mediocre", pos: "adj.", pron: "/ˌmiːdiˈəʊkə/", def: "平庸的、普通的", ex: "Reviews described the film as <em>mediocre</em>." },
+  { word: "lucrative", pos: "adj.", pron: "/ˈluːkrətɪv/", def: "獲利豐厚的、賺錢的", ex: "It turned out to be a <em>lucrative</em> investment." },
+  { word: "obsolete", pos: "adj.", pron: "/ˈɒbsəliːt/", def: "過時的、廢棄的", ex: "Floppy disks have become entirely <em>obsolete</em>." },
+  { word: "archaic", pos: "adj.", pron: "/ɑːˈkeɪɪk/", def: "古老的、過時的", ex: "Many of these laws are <em>archaic</em>." },
+
+  // ===== Time & Sequence =====
+  { word: "antecedent", pos: "noun", pron: "/ˌæntɪˈsiːdnt/", def: "前事、先例", ex: "His behaviour had clear <em>antecedents</em> in childhood." },
+  { word: "ensue", pos: "verb", pron: "/ɪnˈsjuː/", def: "隨之發生", ex: "Chaos <em>ensued</em> after the announcement." },
+  { word: "concurrent", pos: "adj.", pron: "/kənˈkʌrənt/", def: "同時發生的", ex: "The two events were <em>concurrent</em>." },
+  { word: "preceding", pos: "adj.", pron: "/prɪˈsiːdɪŋ/", def: "之前的、在先的", ex: "The <em>preceding</em> chapter explains the background." },
+  { word: "subsequent", pos: "adj.", pron: "/ˈsʌbsɪkwənt/", def: "隨後的、接著的", ex: "<em>Subsequent</em> events confirmed her prediction." },
+  { word: "imminent", pos: "adj.", pron: "/ˈɪmɪnənt/", def: "迫在眉睫的、即將發生的", ex: "Forecasters warned of an <em>imminent</em> storm." },
+  { word: "perennial", pos: "adj.", pron: "/pəˈreniəl/", def: "持續不斷的、長年的", ex: "Traffic remains a <em>perennial</em> problem." },
+  { word: "transient", pos: "adj.", pron: "/ˈtrænziənt/", def: "短暫的、過渡的", ex: "Fame is often <em>transient</em>." },
+  { word: "perpetual", pos: "adj.", pron: "/pəˈpetʃuəl/", def: "永恆的、不斷的", ex: "He lives in a state of <em>perpetual</em> motion." },
+  { word: "fleeting", pos: "adj.", pron: "/ˈfliːtɪŋ/", def: "短暫的、稍縱即逝的", ex: "She caught a <em>fleeting</em> glimpse of the celebrity." },
+  { word: "intermittent", pos: "adj.", pron: "/ˌɪntəˈmɪtənt/", def: "間歇的", ex: "The forecast called for <em>intermittent</em> showers." },
+  { word: "sporadic", pos: "adj.", pron: "/spəˈrædɪk/", def: "零星的、偶發的", ex: "Reports of the disease have been <em>sporadic</em>." },
+
+  // ===== Position & Status =====
+  { word: "preeminent", pos: "adj.", pron: "/priˈemɪnənt/", def: "卓越的、出類拔萃的", ex: "She is a <em>preeminent</em> scholar of medieval history." },
+  { word: "preponderance", pos: "noun", pron: "/prɪˈpɒndərəns/", def: "(數量上的)優勢、多數", ex: "The <em>preponderance</em> of evidence supports the theory." },
+  { word: "incumbent", pos: "adj./noun", pron: "/ɪnˈkʌmbənt/", def: "現任的;有義務的", ex: "It is <em>incumbent</em> upon educators to update their methods." },
+  { word: "subordinate", pos: "adj./noun", pron: "/səˈbɔːdɪnət/", def: "次要的、下級的", ex: "Personal ambition was <em>subordinate</em> to the team's goals." },
+  { word: "ascendancy", pos: "noun", pron: "/əˈsendənsi/", def: "優勢、支配地位", ex: "The party gained <em>ascendancy</em> in the 1990s." },
+{ word: "tangential", pos: "adj.", pron: "/tænˈdʒenʃl/", def: "離題的、次要的", ex: "His comments were <em>tangential</em> to the main argument." },
+{ word: "germane", pos: "adj.", pron: "/dʒɜːˈmeɪn/", def: "切題的、相關的", ex: "Her remarks were <em>germane</em> to the discussion." },
+  { word: "pertinent", pos: "adj.", pron: "/ˈpɜːtɪnənt/", def: "相關的、中肯的", ex: "Please confine your comments to <em>pertinent</em> matters." },
+
+  // ===== Description: People =====
+  { word: "tenacious", pos: "adj.", pron: "/təˈneɪʃəs/", def: "頑強的、堅韌不拔的", ex: "Her <em>tenacious</em> pursuit of the truth paid off." },
+  { word: "indolent", pos: "adj.", pron: "/ˈɪndələnt/", def: "懶惰的", ex: "Critics dismissed him as <em>indolent</em> and unmotivated." },
+  { word: "diligent", pos: "adj.", pron: "/ˈdɪlɪdʒənt/", def: "勤奮的、勤勉的", ex: "She is a <em>diligent</em> and conscientious worker." },
+  { word: "astute", pos: "adj.", pron: "/əˈstjuːt/", def: "精明的、機敏的", ex: "An <em>astute</em> observer of human nature." },
+  { word: "perceptive", pos: "adj.", pron: "/pəˈseptɪv/", def: "感知敏銳的、有洞察力的", ex: "His <em>perceptive</em> analysis impressed the panel." },
+  { word: "altruistic", pos: "adj.", pron: "/ˌæltruˈɪstɪk/", def: "利他的、無私的", ex: "Her motives appeared genuinely <em>altruistic</em>." },
+  { word: "candid", pos: "adj.", pron: "/ˈkændɪd/", def: "坦率的、直言不諱的", ex: "She gave a <em>candid</em> account of the meeting." },
+  { word: "garrulous", pos: "adj.", pron: "/ˈɡærələs/", def: "話多的、嘮叨的", ex: "Their <em>garrulous</em> host kept everyone entertained." },
+  { word: "reticent", pos: "adj.", pron: "/ˈretɪsənt/", def: "沉默寡言的", ex: "He was <em>reticent</em> about his early life." },
+  { word: "obstinate", pos: "adj.", pron: "/ˈɒbstɪnət/", def: "固執的、執拗的", ex: "She remained <em>obstinate</em> despite all evidence." },
+  { word: "amenable", pos: "adj.", pron: "/əˈmiːnəbl/", def: "願意配合的、順從的", ex: "He proved <em>amenable</em> to the proposed changes." },
+  { word: "eccentric", pos: "adj.", pron: "/ɪkˈsentrɪk/", def: "古怪的、特立獨行的", ex: "The professor was famously <em>eccentric</em>." },
+  { word: "magnanimous", pos: "adj.", pron: "/mæɡˈnænɪməs/", def: "寬宏大量的、不計較的", ex: "She was <em>magnanimous</em> in victory." },
+
+  // ===== Phenomena & Process =====
+  { word: "phenomenon", pos: "noun", pron: "/fəˈnɒmɪnən/", def: "現象", ex: "Climate change is a global <em>phenomenon</em>." },
+  { word: "manifestation", pos: "noun", pron: "/ˌmænɪfeˈsteɪʃn/", def: "表現、顯現", ex: "Anger is sometimes a <em>manifestation</em> of fear." },
+  { word: "manifest", pos: "verb/adj.", pron: "/ˈmænɪfest/", def: "顯示、清楚的", ex: "Symptoms typically <em>manifest</em> after several weeks." },
+  { word: "emergence", pos: "noun", pron: "/ɪˈmɜːdʒəns/", def: "出現、興起", ex: "The <em>emergence</em> of new technologies transformed industry." },
+  { word: "advent", pos: "noun", pron: "/ˈædvent/", def: "出現、到來", ex: "The <em>advent</em> of the internet changed everything." },
+  { word: "onset", pos: "noun", pron: "/ˈɒnset/", def: "開始、發作", ex: "The <em>onset</em> of winter brought heavy snow." },
+  { word: "demise", pos: "noun", pron: "/dɪˈmaɪz/", def: "終結、消亡", ex: "Many predicted the <em>demise</em> of print media." },
+  { word: "decline", pos: "noun/verb", pron: "/dɪˈklaɪn/", def: "衰退、下降", ex: "The species is in steady <em>decline</em>." },
+  { word: "resurgence", pos: "noun", pron: "/rɪˈsɜːdʒəns/", def: "復興、再度興起", ex: "The genre has seen a <em>resurgence</em> in popularity." },
+  { word: "regression", pos: "noun", pron: "/rɪˈɡreʃn/", def: "倒退、回歸", ex: "Recent policy represents a <em>regression</em>." },
+  { word: "trajectory", pos: "noun", pron: "/trəˈdʒektəri/", def: "軌跡、發展路徑", ex: "Her career has followed an unusual <em>trajectory</em>." },
+// ===== Negative qualities =====
+  { word: "deleterious", pos: "adj.", pron: "/ˌdeləˈtɪəriəs/", def: "有害的", ex: "Smoking has <em>deleterious</em> effects on health." },
+  { word: "detrimental", pos: "adj.", pron: "/ˌdetrɪˈmentl/", def: "有害的、不利的", ex: "Stress can be <em>detrimental</em> to learning." },
+  { word: "pernicious", pos: "adj.", pron: "/pəˈnɪʃəs/", def: "有害的、惡性的(尤指漸進的)", ex: "Misinformation has a <em>pernicious</em> effect on democracy." },
+  { word: "noxious", pos: "adj.", pron: "/ˈnɒkʃəs/", def: "有毒的、有害的", ex: "The factory emits <em>noxious</em> fumes." },
+  { word: "adverse", pos: "adj.", pron: "/ˈædvɜːs/", def: "不利的、負面的", ex: "Patients experienced no <em>adverse</em> reactions." },
+  { word: "egregious", pos: "adj.", pron: "/ɪˈɡriːdʒəs/", def: "極惡劣的、過分的", ex: "The report cited several <em>egregious</em> violations." },
+  { word: "flawed", pos: "adj.", pron: "/flɔːd/", def: "有缺陷的", ex: "The methodology was deeply <em>flawed</em>." },
+  { word: "untenable", pos: "adj.", pron: "/ʌnˈtenəbl/", def: "站不住腳的、無法維持的", ex: "His position became <em>untenable</em>." },
+  { word: "spurious", pos: "adj.", pron: "/ˈspjʊəriəs/", def: "假的、虛假的", ex: "The claim was based on <em>spurious</em> data." },
+  { word: "fallacious", pos: "adj.", pron: "/fəˈleɪʃəs/", def: "謬誤的", ex: "This is a <em>fallacious</em> line of reasoning." },
+  { word: "futile", pos: "adj.", pron: "/ˈfjuːtaɪl/", def: "徒勞的、無效的", ex: "All attempts at negotiation proved <em>futile</em>." },
+  { word: "redundant", pos: "adj.", pron: "/rɪˈdʌndənt/", def: "多餘的、累贅的", ex: "Eliminate <em>redundant</em> phrases for clarity." },
+
+  // ===== Positive qualities =====
+  { word: "salutary", pos: "adj.", pron: "/ˈsæljətri/", def: "有益的、值得借鑑的", ex: "The crisis was a <em>salutary</em> lesson for the industry." },
+  { word: "auspicious", pos: "adj.", pron: "/ɔːˈspɪʃəs/", def: "吉利的、預兆好的", ex: "The launch had an <em>auspicious</em> start." },
+  { word: "propitious", pos: "adj.", pron: "/prəˈpɪʃəs/", def: "有利的、吉祥的", ex: "Conditions are <em>propitious</em> for expansion." },
+  { word: "prudent", pos: "adj.", pron: "/ˈpruːdnt/", def: "謹慎的、明智的", ex: "It is <em>prudent</em> to save for the future." },
+  { word: "judicious", pos: "adj.", pron: "/dʒuˈdɪʃəs/", def: "明智的、有判斷力的", ex: "The <em>judicious</em> use of resources is essential." },
+  { word: "sagacious", pos: "adj.", pron: "/səˈɡeɪʃəs/", def: "睿智的、有遠見的", ex: "His <em>sagacious</em> advice proved invaluable." },
+  { word: "erudite", pos: "adj.", pron: "/ˈerʊdaɪt/", def: "博學的", ex: "The professor's <em>erudite</em> commentary impressed the audience." },
+  { word: "prolific", pos: "adj.", pron: "/prəˈlɪfɪk/", def: "多產的、豐饒的", ex: "She is a <em>prolific</em> writer of historical fiction." },
+  { word: "innovative", pos: "adj.", pron: "/ˈɪnəveɪtɪv/", def: "創新的", ex: "The company is known for <em>innovative</em> design." },
+  { word: "ingenious", pos: "adj.", pron: "/ɪnˈdʒiːniəs/", def: "巧妙的、有獨創性的", ex: "He devised an <em>ingenious</em> solution." },
+  { word: "exquisite", pos: "adj.", pron: "/ɪkˈskwɪzɪt/", def: "精緻的、極美的", ex: "The jewellery was of <em>exquisite</em> quality." },
+
+  // ===== Verbs of action and effort =====
+  { word: "endeavour", pos: "verb/noun", pron: "/ɪnˈdevə/", def: "努力、嘗試", ex: "Scientists <em>endeavour</em> to understand the cosmos." },
+  { word: "strive", pos: "verb", pron: "/straɪv/", def: "努力奮鬥", ex: "We <em>strive</em> for excellence in everything we do." },
+  { word: "compel", pos: "verb", pron: "/kəmˈpel/", def: "迫使", ex: "Circumstances <em>compelled</em> him to resign." },
+  { word: "coerce", pos: "verb", pron: "/kəʊˈɜːs/", def: "強迫、脅迫", ex: "Witnesses claimed they had been <em>coerced</em>." },
+  { word: "thwart", pos: "verb", pron: "/θwɔːt/", def: "阻撓、挫敗", ex: "Their plans were <em>thwarted</em> by bad weather." },
+  { word: "circumvent", pos: "verb", pron: "/ˌsɜːkəmˈvent/", def: "迴避、規避", ex: "Companies sought to <em>circumvent</em> the new regulations." },
+  { word: "supplement", pos: "verb/noun", pron: "/ˈsʌplɪment/", def: "補充、增補", ex: "She <em>supplements</em> her income by teaching." },
+  { word: "augment", pos: "verb", pron: "/ɔːɡˈment/", def: "增加、增強", ex: "Technology can <em>augment</em> human capabilities." },
+  { word: "amplify", pos: "verb", pron: "/ˈæmplɪfaɪ/", def: "擴大、增強", ex: "Social media <em>amplifies</em> both true and false information." },
+  { word: "diminish", pos: "verb", pron: "/dɪˈmɪnɪʃ/", def: "減少、降低", ex: "The pain <em>diminished</em> over time." },
+  { word: "curtail", pos: "verb", pron: "/kɜːˈteɪl/", def: "縮減、限制", ex: "Funding cuts will <em>curtail</em> services." },
+  { word: "alleviate", pos: "verb", pron: "/əˈliːvieɪt/", def: "減輕、緩和", ex: "Medication can <em>alleviate</em> the symptoms." },
+{ word: "aggravate", pos: "verb", pron: "/ˈæɡrəveɪt/", def: "加劇、惡化", ex: "Stress can <em>aggravate</em> chronic conditions." },
+  { word: "exemplify", pos: "verb", pron: "/ɪɡˈzemplɪfaɪ/", def: "舉例說明、是…的典範", ex: "She <em>exemplifies</em> the qualities of a good leader." },
+  { word: "illuminate", pos: "verb", pron: "/ɪˈluːmɪneɪt/", def: "闡明、照亮", ex: "Her research <em>illuminates</em> the workings of the brain." },
+  { word: "validate", pos: "verb", pron: "/ˈvælɪdeɪt/", def: "證實、驗證", ex: "Independent studies <em>validate</em> the findings." },
+{ word: "discriminate", pos: "verb", pron: "/dɪˈskrɪmɪneɪt/", def: "辨別、區分", ex: "Babies can <em>discriminate</em> between voices early." },
+  { word: "disseminate", pos: "verb", pron: "/dɪˈsemɪneɪt/", def: "散布、傳播(資訊)", ex: "The report was <em>disseminated</em> widely." },
+  { word: "attribute", pos: "verb", pron: "/əˈtrɪbjuːt/", def: "歸因於", ex: "She <em>attributes</em> her success to hard work." },
+  { word: "ascribe", pos: "verb", pron: "/əˈskraɪb/", def: "歸因於、歸咎於", ex: "Historians <em>ascribe</em> the decline to multiple factors." },
+  { word: "advocate", pos: "verb/noun", pron: "/ˈædvəkeɪt/", def: "倡導、提倡", ex: "She <em>advocates</em> for educational reform." },
+  { word: "rebuff", pos: "verb", pron: "/rɪˈbʌf/", def: "拒絕、回絕", ex: "His proposals were curtly <em>rebuffed</em>." },
+  { word: "renounce", pos: "verb", pron: "/rɪˈnaʊns/", def: "放棄、棄絕", ex: "She <em>renounced</em> her citizenship." },
+  { word: "espouse", pos: "verb", pron: "/ɪˈspaʊz/", def: "擁護、信奉", ex: "He <em>espoused</em> radical political views." },
+  { word: "denounce", pos: "verb", pron: "/dɪˈnaʊns/", def: "譴責、公開抨擊", ex: "The policy was widely <em>denounced</em>." },
+
+  // ===== Science & Methodology =====
+{ word: "theoretical", pos: "adj.", pron: "/ˌθɪəˈretɪkl/", def: "理論的", ex: "This is a <em>theoretical</em> rather than practical concern." },
+
+{ word: "hypothesis", pos: "noun", pron: "/haɪˈpɒθəsɪs/", def: "假設、假說", ex: "The experiment was designed to test the <em>hypothesis</em>." },
+  { word: "premise", pos: "noun", pron: "/ˈpremɪs/", def: "前提", ex: "The argument rests on a flawed <em>premise</em>." },
+
+{ word: "synthesise", pos: "verb", pron: "/ˈsɪnθəsaɪz/", def: "綜合、合成", ex: "The book <em>synthesises</em> diverse research findings." },
+  { word: "extrapolation", pos: "noun", pron: "/ɪkˌstræpəˈleɪʃn/", def: "外推、推斷", ex: "The forecast is based on <em>extrapolation</em> of past data." },
+  { word: "correlation", pos: "noun", pron: "/ˌkɒrəˈleɪʃn/", def: "相關性", ex: "Studies show a strong <em>correlation</em> between the two." },
+  { word: "causation", pos: "noun", pron: "/kɔːˈzeɪʃn/", def: "因果關係", ex: "Correlation does not imply <em>causation</em>." },
+  { word: "variable", pos: "noun/adj.", pron: "/ˈveəriəbl/", def: "變數、可變的", ex: "Several <em>variables</em> affect the outcome." },
+{ word: "paradigm shift", pos: "phrase", pron: "/ˈpærədaɪm ʃɪft/", def: "典範轉移", ex: "Einstein's theory caused a <em>paradigm shift</em>." },
+  { word: "rigour", pos: "noun", pron: "/ˈrɪɡə/", def: "嚴謹、嚴格", ex: "The study lacks methodological <em>rigour</em>." },
+  { word: "calibrate", pos: "verb", pron: "/ˈkælɪbreɪt/", def: "校準、調校", ex: "Instruments must be regularly <em>calibrated</em>." },
+  { word: "approximation", pos: "noun", pron: "/əˌprɒksɪˈmeɪʃn/", def: "近似、估算", ex: "These numbers are merely an <em>approximation</em>." },
+  { word: "phenomena", pos: "noun (pl.)", pron: "/fəˈnɒmɪnə/", def: "現象(複數)", ex: "Many natural <em>phenomena</em> remain unexplained." },
+
+  // ===== Social & Political =====
+  { word: "egalitarian", pos: "adj.", pron: "/ɪˌɡælɪˈteəriən/", def: "平等主義的", ex: "Scandinavian societies are notably <em>egalitarian</em>." },
+  { word: "autocratic", pos: "adj.", pron: "/ˌɔːtəˈkrætɪk/", def: "獨裁的、專制的", ex: "He ran the company in an <em>autocratic</em> manner." },
+  { word: "hierarchical", pos: "adj.", pron: "/ˌhaɪəˈrɑːkɪkl/", def: "階層的、等級制的", ex: "The organisation has a strict <em>hierarchical</em> structure." },
+  { word: "patriarchal", pos: "adj.", pron: "/ˌpeɪtriˈɑːkl/", def: "父權的", ex: "She critiques the <em>patriarchal</em> assumptions of the era." },
+  { word: "marginalise", pos: "verb", pron: "/ˈmɑːdʒɪnəlaɪz/", def: "邊緣化", ex: "Minorities continue to be <em>marginalised</em>." },
+  { word: "assimilate", pos: "verb", pron: "/əˈsɪmɪleɪt/", def: "同化、吸收", ex: "Immigrants gradually <em>assimilated</em> into local culture." },
+  { word: "discrimination", pos: "noun", pron: "/dɪˌskrɪmɪˈneɪʃn/", def: "歧視、區別待遇", ex: "Laws prohibit <em>discrimination</em> in employment." },
+  { word: "stratification", pos: "noun", pron: "/ˌstrætɪfɪˈkeɪʃn/", def: "階層化、分層", ex: "Social <em>stratification</em> persists in many societies." },
+  { word: "diaspora", pos: "noun", pron: "/daɪˈæspərə/", def: "散居族群、移民群體", ex: "The Greek <em>diaspora</em> spread across the Mediterranean." },
+  { word: "demographic", pos: "adj./noun", pron: "/ˌdeməˈɡræfɪk/", def: "人口統計的", ex: "<em>Demographic</em> trends suggest an ageing population." },
+  { word: "indigenous", pos: "adj.", pron: "/ɪnˈdɪdʒənəs/", def: "原住民的、本土的", ex: "<em>Indigenous</em> communities depend on the forest." },
+  { word: "colonisation", pos: "noun", pron: "/ˌkɒlənaɪˈzeɪʃn/", def: "殖民、開拓", ex: "European <em>colonisation</em> reshaped the Americas." },
+  { word: "sovereignty", pos: "noun", pron: "/ˈsɒvrənti/", def: "主權", ex: "The dispute concerns territorial <em>sovereignty</em>." },
+  { word: "autonomy", pos: "noun", pron: "/ɔːˈtɒnəmi/", def: "自治、自主性", ex: "Regions sought greater <em>autonomy</em> from central rule." },
+  { word: "legislation", pos: "noun", pron: "/ˌledʒɪsˈleɪʃn/", def: "法律、立法", ex: "The new <em>legislation</em> takes effect next year." },
+  { word: "mandate", pos: "noun/verb", pron: "/ˈmændeɪt/", def: "授權、命令", ex: "The government claims a clear electoral <em>mandate</em>." },
+
+  // ===== Aesthetics & Art =====
+  { word: "aesthetic", pos: "adj./noun", pron: "/iːsˈθetɪk/", def: "美學的、美感的", ex: "The building's <em>aesthetic</em> appeal is undeniable." },
+  { word: "evocative", pos: "adj.", pron: "/ɪˈvɒkətɪv/", def: "引發聯想的、喚起情感的", ex: "Her writing is highly <em>evocative</em> of rural life." },
+  { word: "poignant", pos: "adj.", pron: "/ˈpɔɪnjənt/", def: "辛酸的、感人深刻的", ex: "The film offers a <em>poignant</em> portrait of loss." },
+  { word: "vivid", pos: "adj.", pron: "/ˈvɪvɪd/", def: "鮮明的、生動的", ex: "She gave a <em>vivid</em> description of the scene." },
+  { word: "lyrical", pos: "adj.", pron: "/ˈlɪrɪkl/", def: "抒情的、富詩意的", ex: "The novel has a <em>lyrical</em> quality." },
+  { word: "didactic", pos: "adj.", pron: "/daɪˈdæktɪk/", def: "說教的、教導的", ex: "Some critics found the play overly <em>didactic</em>." },
+  { word: "allegorical", pos: "adj.", pron: "/ˌæləˈɡɒrɪkl/", def: "寓言的、象徵性的", ex: "The story is <em>allegorical</em> rather than literal." },
+  { word: "satirical", pos: "adj.", pron: "/səˈtɪrɪkl/", def: "諷刺的", ex: "The magazine is known for its <em>satirical</em> commentary." },
+  { word: "avant-garde", pos: "adj.", pron: "/ˌævɒŋ ˈɡɑːd/", def: "前衛的、先鋒派的", ex: "The exhibition featured <em>avant-garde</em> sculptures." },
+  { word: "minimalist", pos: "adj.", pron: "/ˈmɪnɪməlɪst/", def: "極簡風的", ex: "Her <em>minimalist</em> designs have gained a following." },
+  { word: "iconic", pos: "adj.", pron: "/aɪˈkɒnɪk/", def: "標誌性的", ex: "The skyline features several <em>iconic</em> buildings." },
+  { word: "renaissance", pos: "noun", pron: "/rɪˈneɪsns/", def: "復興、文藝復興", ex: "The neighbourhood is undergoing a cultural <em>renaissance</em>." },
+
+  // ===== Economy & Business =====
+  { word: "burgeoning", pos: "adj.", pron: "/ˈbɜːdʒənɪŋ/", def: "迅速擴展的、新興的", ex: "The <em>burgeoning</em> tech industry attracts global talent." },
+  { word: "thriving", pos: "adj.", pron: "/ˈθraɪvɪŋ/", def: "蓬勃發展的", ex: "The town has a <em>thriving</em> arts community." },
+  { word: "fluctuate", pos: "verb", pron: "/ˈflʌktʃueɪt/", def: "波動、起伏", ex: "Oil prices <em>fluctuate</em> with global demand." },
+  { word: "stagnation", pos: "noun", pron: "/stæɡˈneɪʃn/", def: "停滯、停頓", ex: "The economy faces prolonged <em>stagnation</em>." },
+  { word: "recession", pos: "noun", pron: "/rɪˈseʃn/", def: "經濟衰退", ex: "The country narrowly avoided a <em>recession</em>." },
+  { word: "proliferate", pos: "verb", pron: "/prəˈlɪfəreɪt/", def: "激增、繁衍", ex: "Online retailers <em>proliferated</em> during the pandemic." },
+  { word: "commodity", pos: "noun", pron: "/kəˈmɒdəti/", def: "商品", ex: "Oil is a globally traded <em>commodity</em>." },
+  { word: "monopoly", pos: "noun", pron: "/məˈnɒpəli/", def: "壟斷", ex: "The firm holds a near-<em>monopoly</em> on the market." },
+  { word: "subsidy", pos: "noun", pron: "/ˈsʌbsədi/", def: "補貼、補助金", ex: "Farmers receive government <em>subsidies</em>." },
+  { word: "inflation", pos: "noun", pron: "/ɪnˈfleɪʃn/", def: "通貨膨脹", ex: "<em>Inflation</em> rose by three per cent last year." },
+  { word: "deficit", pos: "noun", pron: "/ˈdefɪsɪt/", def: "赤字、不足", ex: "The country is running a large trade <em>deficit</em>." },
+  { word: "surplus", pos: "noun", pron: "/ˈsɜːpləs/", def: "盈餘、過剩", ex: "Production created an unexpected <em>surplus</em>." },
+  { word: "incentive", pos: "noun", pron: "/ɪnˈsentɪv/", def: "誘因、獎勵", ex: "Tax breaks act as <em>incentives</em> for investment." },
+  { word: "disparity", pos: "noun", pron: "/dɪˈspærəti/", def: "差距、懸殊", ex: "Income <em>disparity</em> continues to widen." },
+
+  // ===== Environment & Nature =====
+  { word: "ecosystem", pos: "noun", pron: "/ˈiːkəʊsɪstəm/", def: "生態系統", ex: "Coral reefs support diverse <em>ecosystems</em>." },
+  { word: "biodiversity", pos: "noun", pron: "/ˌbaɪəʊdaɪˈvɜːsəti/", def: "生物多樣性", ex: "<em>Biodiversity</em> loss threatens food security." },
+  { word: "habitat", pos: "noun", pron: "/ˈhæbɪtæt/", def: "棲息地", ex: "Deforestation destroys natural <em>habitats</em>." },
+  { word: "sustainable", pos: "adj.", pron: "/səˈsteɪnəbl/", def: "可持續的", ex: "We need <em>sustainable</em> energy sources." },
+  { word: "renewable", pos: "adj.", pron: "/rɪˈnjuːəbl/", def: "可再生的", ex: "Solar power is a <em>renewable</em> energy source." },
+  { word: "conservation", pos: "noun", pron: "/ˌkɒnsəˈveɪʃn/", def: "保育、保護", ex: "<em>Conservation</em> efforts have saved several species." },
+  { word: "extinction", pos: "noun", pron: "/ɪkˈstɪŋkʃn/", def: "滅絕", ex: "The species is on the verge of <em>extinction</em>." },
+  { word: "endemic", pos: "adj.", pron: "/enˈdemɪk/", def: "特有的、地方性的", ex: "These plants are <em>endemic</em> to Madagascar." },
+  { word: "deforestation", pos: "noun", pron: "/ˌdiːfɒrɪˈsteɪʃn/", def: "森林砍伐", ex: "<em>Deforestation</em> contributes to climate change." },
+  { word: "carnivore", pos: "noun", pron: "/ˈkɑːnɪvɔː/", def: "肉食動物", ex: "Wolves are apex <em>carnivores</em>." },
+  { word: "herbivore", pos: "noun", pron: "/ˈhɜːbɪvɔː/", def: "草食動物", ex: "Most large <em>herbivores</em> live in herds." },
+  { word: "predator", pos: "noun", pron: "/ˈpredətə/", def: "掠食者", ex: "Sharks are formidable <em>predators</em>." },
+  { word: "migration", pos: "noun", pron: "/maɪˈɡreɪʃn/", def: "遷徙", ex: "Bird <em>migration</em> follows seasonal patterns." },
+  { word: "metabolism", pos: "noun", pron: "/məˈtæbəlɪzəm/", def: "新陳代謝", ex: "Some fish have slower <em>metabolisms</em>." },
+  { word: "photosynthesis", pos: "noun", pron: "/ˌfəʊtəʊˈsɪnθəsɪs/", def: "光合作用", ex: "<em>Photosynthesis</em> converts sunlight into chemical energy." },
+
+  // ===== Linking & Discourse =====
+  { word: "albeit", pos: "conj.", pron: "/ɔːlˈbiːɪt/", def: "雖然、儘管(讓步轉折)", ex: "She accepted the offer, <em>albeit</em> reluctantly." },
+  { word: "notwithstanding", pos: "prep./adv.", pron: "/ˌnɒtwɪðˈstændɪŋ/", def: "儘管、雖然", ex: "<em>Notwithstanding</em> the delays, the project succeeded." },
+  { word: "conversely", pos: "adv.", pron: "/ˈkɒnvɜːsli/", def: "相反地", ex: "She enjoys cold weather; <em>conversely</em>, her sister prefers heat." },
+  { word: "nonetheless", pos: "adv.", pron: "/ˌnʌnðəˈles/", def: "儘管如此", ex: "The book has flaws; it is <em>nonetheless</em> worth reading." },
+  { word: "hence", pos: "adv.", pron: "/hens/", def: "因此", ex: "Demand is rising; <em>hence</em> the price increase." },
+  { word: "thereby", pos: "adv.", pron: "/ˌðeəˈbaɪ/", def: "藉此、從而", ex: "Reducing waste, <em>thereby</em> cutting costs." },
+  { word: "insofar as", pos: "phrase", pron: "/ˌɪnsəʊˈfɑːr əz/", def: "就…而言", ex: "He helped <em>insofar as</em> his time allowed." },
+  { word: "moreover", pos: "adv.", pron: "/mɔːˈrəʊvə/", def: "此外", ex: "The plan is risky; <em>moreover</em>, it is expensive." },
+  { word: "furthermore", pos: "adv.", pron: "/ˌfɜːðəˈmɔː/", def: "再者、此外", ex: "<em>Furthermore</em>, the data is incomplete." },
+  { word: "in lieu of", pos: "phrase", pron: "/ɪn ˈljuː əv/", def: "代替", ex: "She accepted vouchers <em>in lieu of</em> cash." },
+
+  // ===== Less common but high-utility =====
+  { word: "quintessential", pos: "adj.", pron: "/ˌkwɪntɪˈsenʃl/", def: "典型的、最具代表性的", ex: "She is the <em>quintessential</em> Renaissance scholar." },
+{ word: "ostensibly", pos: "adv.", pron: "/ɒˈstensəbli/", def: "表面上、據稱", ex: "He resigned <em>ostensibly</em> for personal reasons." },
+  { word: "purportedly", pos: "adv.", pron: "/pəˈpɔːtɪdli/", def: "據稱、據傳", ex: "The document was <em>purportedly</em> signed in 1789." },
+  { word: "ironically", pos: "adv.", pron: "/aɪˈrɒnɪkli/", def: "諷刺的是", ex: "<em>Ironically</em>, the safety device caused the accident." },
+  { word: "inadvertently", pos: "adv.", pron: "/ˌɪnədˈvɜːtəntli/", def: "不經意地、無意中", ex: "She <em>inadvertently</em> revealed the surprise." },
+  { word: "concomitant", pos: "adj.", pron: "/kənˈkɒmɪtənt/", def: "伴隨的、共同發生的", ex: "Urbanisation brought <em>concomitant</em> social changes." },
+  { word: "ostentatious", pos: "adj.", pron: "/ˌɒstenˈteɪʃəs/", def: "炫耀的、招搖的", ex: "His <em>ostentatious</em> displays of wealth annoyed neighbours." },
+  { word: "innocuous", pos: "adj.", pron: "/ɪˈnɒkjuəs/", def: "無害的、無傷大雅的", ex: "What seemed an <em>innocuous</em> comment caused offence." },
+  { word: "ambivalent", pos: "adj.", pron: "/æmˈbɪvələnt/", def: "矛盾的、又喜又惡的", ex: "She feels <em>ambivalent</em> about the move." },
+  { word: "equivocal", pos: "adj.", pron: "/ɪˈkwɪvəkl/", def: "模稜兩可的", ex: "His response was deliberately <em>equivocal</em>." },
+  { word: "categorical", pos: "adj.", pron: "/ˌkætəˈɡɒrɪkl/", def: "斷然的、明確的", ex: "She issued a <em>categorical</em> denial." },
+  { word: "tantamount", pos: "adj.", pron: "/ˈtæntəmaʊnt/", def: "相當於、等同於", ex: "Silence is <em>tantamount</em> to consent." },
+  { word: "redolent", pos: "adj.", pron: "/ˈredələnt/", def: "讓人聯想到、瀰漫…氣息的", ex: "The street is <em>redolent</em> of old-world charm." },
+  { word: "vestige", pos: "noun", pron: "/ˈvestɪdʒ/", def: "殘跡、遺跡", ex: "Only <em>vestiges</em> of the original wall remain." },
+  { word: "remnant", pos: "noun", pron: "/ˈremnənt/", def: "殘餘、剩餘部分", ex: "A few <em>remnants</em> of the ancient civilisation survive." },
+  { word: "incipient", pos: "adj.", pron: "/ɪnˈsɪpiənt/", def: "初期的、剛開始的", ex: "Doctors detected an <em>incipient</em> infection." },
+  { word: "nascent", pos: "adj.", pron: "/ˈnæsnt/", def: "新生的、萌芽的", ex: "The <em>nascent</em> field of quantum computing." },
+  { word: "embryonic", pos: "adj.", pron: "/ˌembriˈɒnɪk/", def: "初期的、胚胎的", ex: "The technology is still in its <em>embryonic</em> stage." },
+  { word: "moribund", pos: "adj.", pron: "/ˈmɒrɪbʌnd/", def: "垂死的、奄奄一息的", ex: "Critics declared the industry <em>moribund</em>." },
+  { word: "stark", pos: "adj.", pron: "/stɑːk/", def: "鮮明的、嚴峻的", ex: "The report paints a <em>stark</em> picture." },
+  { word: "blatant", pos: "adj.", pron: "/ˈbleɪtnt/", def: "公然的、明目張膽的", ex: "His behaviour showed <em>blatant</em> disregard for rules." },
+  { word: "covert", pos: "adj.", pron: "/ˈkəʊvɜːt/", def: "祕密的、隱蔽的", ex: "The agency conducted <em>covert</em> operations." },
+  { word: "overt", pos: "adj.", pron: "/əʊˈvɜːt/", def: "公開的、明顯的", ex: "There was no <em>overt</em> opposition." },
+  { word: "tacit", pos: "adj.", pron: "/ˈtæsɪt/", def: "心照不宣的、默許的", ex: "There was <em>tacit</em> agreement among the team." },
+  { word: "explicit", pos: "adj.", pron: "/ɪkˈsplɪsɪt/", def: "明確的、直接的", ex: "Please be more <em>explicit</em> about your expectations." },
+  { word: "implicit", pos: "adj.", pron: "/ɪmˈplɪsɪt/", def: "含蓄的、隱含的", ex: "There was an <em>implicit</em> threat in his words." },
+  { word: "lucid", pos: "adj.", pron: "/ˈluːsɪd/", def: "清晰的、明白易懂的", ex: "She gave a <em>lucid</em> explanation of the theory." },
+  { word: "opaque", pos: "adj.", pron: "/əʊˈpeɪk/", def: "不透明的、難懂的", ex: "His writing is famously <em>opaque</em>." },
+  { word: "pristine", pos: "adj.", pron: "/ˈprɪstiːn/", def: "原始的、完美無瑕的", ex: "The forest remains in <em>pristine</em> condition." },
+  { word: "decrepit", pos: "adj.", pron: "/dɪˈkrepɪt/", def: "破舊的、衰老的", ex: "The <em>decrepit</em> building was finally demolished." },
+  { word: "voracious", pos: "adj.", pron: "/vəˈreɪʃəs/", def: "貪婪的、如飢似渴的", ex: "She is a <em>voracious</em> reader." },
+  { word: "insatiable", pos: "adj.", pron: "/ɪnˈseɪʃəbl/", def: "難以滿足的", ex: "He has an <em>insatiable</em> curiosity." },
+  { word: "anomalous", pos: "adj.", pron: "/əˈnɒmələs/", def: "反常的、異常的", ex: "Results were strangely <em>anomalous</em>." },
+
 ];
 
 let currentCard = 0;
@@ -45,6 +368,12 @@ function renderCard() {
   document.getElementById('cardDef').textContent = v.def;
   document.getElementById('cardEx').innerHTML = '"' + v.ex + '"';
   document.getElementById('cardNum').textContent = currentCard + 1;
+  const totalEl = document.getElementById('cardTotal');
+  if (totalEl) totalEl.textContent = vocabulary.length;
+  const mobileNum = document.getElementById('cardNumMobile');
+  if (mobileNum) mobileNum.textContent = currentCard + 1;
+  const mobileTotal = document.getElementById('cardTotalMobile');
+  if (mobileTotal) mobileTotal.textContent = vocabulary.length;
   document.getElementById('flashcard').classList.remove('flipped');
 }
 
@@ -68,6 +397,46 @@ function shuffleCards() {
   renderCard();
 }
 
+// Touch swipe handler for mobile
+(function initSwipe() {
+  if (typeof window === 'undefined') return;
+  // Initialise after DOM is ready
+  function attach() {
+    const card = document.getElementById('flashcard');
+    if (!card) return;
+    let startX = 0, startY = 0, startTime = 0;
+    card.addEventListener('touchstart', (e) => {
+      if (e.touches.length !== 1) return;
+      startX = e.touches[0].clientX;
+      startY = e.touches[0].clientY;
+      startTime = Date.now();
+    }, { passive: true });
+    card.addEventListener('touchend', (e) => {
+      if (e.changedTouches.length !== 1) return;
+      const endX = e.changedTouches[0].clientX;
+      const endY = e.changedTouches[0].clientY;
+      const dx = endX - startX;
+      const dy = endY - startY;
+      const dt = Date.now() - startTime;
+      // Only treat as swipe if mostly horizontal, fast enough, and far enough
+      if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy) * 1.5 && dt < 500) {
+        if (dx < 0) {
+          card.classList.add('swiping-left');
+          setTimeout(() => { card.classList.remove('swiping-left'); nextCard(); }, 250);
+        } else {
+          card.classList.add('swiping-right');
+          setTimeout(() => { card.classList.remove('swiping-right'); prevCard(); }, 250);
+        }
+      }
+    }, { passive: true });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', attach);
+  } else {
+    attach();
+  }
+})();
+
 // Render word list
 function renderWordList() {
   const html = vocabulary.map(v =>
@@ -90,6 +459,21 @@ const quizQuestions = [
   { word: "ubiquitous", options: ["rare", "everywhere", "ancient", "harmful"], correct: 1 },
   { word: "anomaly", options: ["a pattern", "an irregularity", "a definition", "a measurement"], correct: 1 },
   { word: "elucidate", options: ["to confuse", "to escape", "to clarify", "to challenge"], correct: 2 },
+  { word: "exacerbate", options: ["to soothe", "to make worse", "to repeat", "to disguise"], correct: 1 },
+  { word: "salient", options: ["hidden", "noticeable", "salty", "trivial"], correct: 1 },
+  { word: "refute", options: ["to confirm", "to disprove", "to recall", "to compare"], correct: 1 },
+  { word: "tenuous", options: ["dense", "weak or unconvincing", "fast", "permanent"], correct: 1 },
+  { word: "cogent", options: ["incoherent", "compelling", "boring", "lengthy"], correct: 1 },
+  { word: "burgeoning", options: ["shrinking", "rapidly growing", "stable", "ancient"], correct: 1 },
+  { word: "deleterious", options: ["beneficial", "harmful", "delicate", "delicious"], correct: 1 },
+  { word: "preclude", options: ["to invite", "to prevent", "to enclose", "to introduce"], correct: 1 },
+  { word: "auspicious", options: ["unfavourable", "promising", "auditory", "anxious"], correct: 1 },
+  { word: "innate", options: ["acquired", "inborn", "innocent", "inanimate"], correct: 1 },
+  { word: "perpetuate", options: ["to stop", "to continue", "to puzzle", "to forget"], correct: 1 },
+  { word: "scarce", options: ["frequent", "rare", "frightening", "easy"], correct: 1 },
+  { word: "diligent", options: ["lazy", "hard-working", "delayed", "delightful"], correct: 1 },
+  { word: "albeit", options: ["because", "although", "perhaps", "instead"], correct: 1 },
+  { word: "concede", options: ["to deny", "to admit", "to conceal", "to convince"], correct: 1 },
 ];
 
 let userAnswers = {};

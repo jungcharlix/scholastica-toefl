@@ -183,12 +183,17 @@ h3 {
 
 .italic-accent {
   font-style: normal;
-  font-weight: 700;
-  background: linear-gradient(135deg, var(--oxblood) 0%, var(--gold) 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: var(--oxblood);
+  font-weight: inherit;
+  color: var(--ink);
+  position: relative;
+  background: none;
+  -webkit-text-fill-color: initial;
+  display: inline-block;
+  padding-bottom: 2px;
+  background-image: linear-gradient(90deg, var(--oxblood), var(--gold));
+  background-size: 100% 4px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
 }
 
 /* ===== HERO ===== */
@@ -2612,7 +2617,88 @@ footer .quote {
 
 .review-cta:hover::after { transform: translateX(6px); }
 
-/* ===== MOBILE FLASHCARD SWIPE ===== */
+/* ===== TRANSCRIPT & AUDIO TIP ===== */
+.track-script {
+  margin-top: 12px;
+  border-top: 1px solid var(--rule);
+  padding-top: 12px;
+}
+
+.track-script summary {
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--oxblood);
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  user-select: none;
+}
+
+.track-script summary::-webkit-details-marker { display: none; }
+
+.track-script summary::before {
+  content: '▸';
+  display: inline-block;
+  transition: transform 0.2s;
+  font-size: 10px;
+}
+
+.track-script[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.track-script p {
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--ink-2);
+  padding: 12px 14px;
+  background: var(--paper-2);
+  border-radius: 8px;
+}
+
+.audio-tip {
+  margin-top: 32px;
+  padding: 18px 22px;
+  background: var(--paper-2);
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  border-left: 3px solid var(--oxblood);
+}
+
+.audio-tip strong {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+
+.audio-tip p {
+  font-size: 13px;
+  color: var(--sepia);
+  line-height: 1.65;
+  margin: 0;
+}
+
+.audio-tip a {
+  color: var(--oxblood);
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 1px solid var(--oxblood);
+}
+
+.audio-tip a:hover {
+  color: var(--oxblood-deep);
+  border-bottom-color: var(--oxblood-deep);
+}
+
+
 .flashcard-swipe-hint {
   display: none;
   text-align: center;

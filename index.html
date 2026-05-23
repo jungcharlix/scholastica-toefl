@@ -231,57 +231,78 @@
     </div>
 
     <div class="listening-tracks">
-      <div class="track-card">
+      <div class="track-card" data-track="1">
         <div class="track-type">LECTURE · BIOLOGY</div>
         <div class="track-title">Symbiosis in Coral Reefs</div>
         <div class="track-desc">教授講解珊瑚與蟲黃藻的共生關係,並討論氣候暖化對此平衡的破壞。練習辨識「cause-effect」結構。</div>
         <div class="audio-player">
-          <button class="play-btn" onclick="togglePlay(this, 1)" aria-label="Play">
-            <svg width="12" height="14" viewBox="0 0 12 14" fill="currentColor"><path d="M0 0 L0 14 L12 7 Z"/></svg>
+          <button class="play-btn" onclick="speakTrack(this, 1)" aria-label="Play">
+            <svg class="play-icon" width="12" height="14" viewBox="0 0 12 14" fill="currentColor"><path d="M0 0 L0 14 L12 7 Z"/></svg>
           </button>
           <div class="audio-progress"><div class="audio-progress-fill" id="prog1"></div></div>
-          <div class="audio-time" id="time1">5:42</div>
+          <div class="audio-time" id="time1">~ 2 min</div>
         </div>
+        <details class="track-script">
+          <summary>顯示講稿 · Transcript</summary>
+          <p id="script1">Today I want to talk about one of the most striking examples of symbiosis in the natural world — the relationship between coral and a microscopic algae called zooxanthellae. Most reef-building corals contain millions of these tiny algal cells within their tissues. The arrangement is mutually beneficial. The algae provide the coral with sugars produced through photosynthesis, which can account for up to ninety percent of the coral's energy needs. In return, the coral provides the algae with shelter and access to sunlight near the ocean surface. However, this delicate partnership is highly sensitive to temperature. When water temperatures rise even one or two degrees above normal, the coral expels the algae in a stress response known as bleaching. Without their algal partners, corals lose their vivid color and, more critically, their primary food source. Prolonged bleaching often leads to coral death. This is why even modest increases in ocean temperature, driven by climate change, pose an existential threat to reef ecosystems worldwide.</p>
+        </details>
       </div>
 
-      <div class="track-card">
+      <div class="track-card" data-track="2">
         <div class="track-type">CONVERSATION · CAMPUS</div>
         <div class="track-title">Office Hours: Thesis Advice</div>
         <div class="track-desc">學生與教授討論論文題目與研究方法。聽出說話者的態度與隱含建議。</div>
         <div class="audio-player">
-          <button class="play-btn" onclick="togglePlay(this, 2)" aria-label="Play">
-            <svg width="12" height="14" viewBox="0 0 12 14" fill="currentColor"><path d="M0 0 L0 14 L12 7 Z"/></svg>
+          <button class="play-btn" onclick="speakTrack(this, 2)" aria-label="Play">
+            <svg class="play-icon" width="12" height="14" viewBox="0 0 12 14" fill="currentColor"><path d="M0 0 L0 14 L12 7 Z"/></svg>
           </button>
           <div class="audio-progress"><div class="audio-progress-fill" id="prog2"></div></div>
-          <div class="audio-time" id="time2">3:18</div>
+          <div class="audio-time" id="time2">~ 90 sec</div>
         </div>
+        <details class="track-script">
+          <summary>顯示講稿 · Transcript</summary>
+          <p id="script2">Professor, I wanted to talk to you about my thesis topic. I'm considering writing about the effects of social media on adolescent mental health. Well, that's a popular area, but it's also become very crowded. Have you considered narrowing it? For instance, instead of social media generally, you could focus on one specific platform, or one specific outcome like sleep quality. Hmm, I see. Actually, sleep quality is something I've thought about. I've read several studies showing teenagers are getting much less sleep than they used to. Good, that's promising. But a literature review alone won't give you much room for original contribution. Could you design even a small survey, or analyze existing data? I think a survey is feasible. I could probably reach maybe fifty students through my dorm. That sounds reasonable for an undergraduate thesis. Just remember to get ethical approval before you begin collecting data. The process can take a few weeks, so start now.</p>
+        </details>
       </div>
 
-      <div class="track-card">
+      <div class="track-card" data-track="3">
         <div class="track-type">LECTURE · ART HISTORY</div>
         <div class="track-title">The Bauhaus Movement</div>
         <div class="track-desc">介紹包浩斯學院的設計哲學與其對現代主義建築的影響。注意專有名詞拼法與年代序列。</div>
         <div class="audio-player">
-          <button class="play-btn" onclick="togglePlay(this, 3)" aria-label="Play">
-            <svg width="12" height="14" viewBox="0 0 12 14" fill="currentColor"><path d="M0 0 L0 14 L12 7 Z"/></svg>
+          <button class="play-btn" onclick="speakTrack(this, 3)" aria-label="Play">
+            <svg class="play-icon" width="12" height="14" viewBox="0 0 12 14" fill="currentColor"><path d="M0 0 L0 14 L12 7 Z"/></svg>
           </button>
           <div class="audio-progress"><div class="audio-progress-fill" id="prog3"></div></div>
-          <div class="audio-time" id="time3">6:05</div>
+          <div class="audio-time" id="time3">~ 2 min</div>
         </div>
+        <details class="track-script">
+          <summary>顯示講稿 · Transcript</summary>
+          <p id="script3">The Bauhaus was a German art school that operated from nineteen nineteen to nineteen thirty three. Founded by the architect Walter Gropius in the city of Weimar, it sought to unify fine art, craft, and industrial design under a single educational philosophy. The school's core belief was that good design should be both functional and accessible to ordinary people, not just the wealthy. Bauhaus designers favored simple geometric forms, clean lines, and industrial materials like steel, glass, and concrete. Decoration for its own sake was rejected. This aesthetic — often summarized by the phrase "form follows function" — became enormously influential. When the Nazi government forced the school to close in nineteen thirty three, many Bauhaus faculty members emigrated, particularly to the United States. They brought their ideas to institutions like Harvard and the Illinois Institute of Technology, shaping modernist architecture in cities like New York and Chicago throughout the twentieth century.</p>
+        </details>
       </div>
 
-      <div class="track-card">
+      <div class="track-card" data-track="4">
         <div class="track-type">LECTURE · ASTRONOMY</div>
         <div class="track-title">Exoplanet Detection Methods</div>
         <div class="track-desc">凌日法與徑向速度法的比較。練習「compare-contrast」題型的筆記策略。</div>
         <div class="audio-player">
-          <button class="play-btn" onclick="togglePlay(this, 4)" aria-label="Play">
-            <svg width="12" height="14" viewBox="0 0 12 14" fill="currentColor"><path d="M0 0 L0 14 L12 7 Z"/></svg>
+          <button class="play-btn" onclick="speakTrack(this, 4)" aria-label="Play">
+            <svg class="play-icon" width="12" height="14" viewBox="0 0 12 14" fill="currentColor"><path d="M0 0 L0 14 L12 7 Z"/></svg>
           </button>
           <div class="audio-progress"><div class="audio-progress-fill" id="prog4"></div></div>
-          <div class="audio-time" id="time4">5:28</div>
+          <div class="audio-time" id="time4">~ 2 min</div>
         </div>
+        <details class="track-script">
+          <summary>顯示講稿 · Transcript</summary>
+          <p id="script4">Today we'll compare the two main techniques astronomers use to detect planets around other stars — what we call exoplanets. The first is the transit method. When a planet passes in front of its host star from our line of sight, it blocks a tiny fraction of the star's light. By measuring this periodic dip in brightness, astronomers can infer the presence of the planet, estimate its size, and even calculate its orbital period. NASA's Kepler space telescope used this method to discover thousands of exoplanets. The second technique is the radial velocity method. As a planet orbits its star, its gravitational pull causes the star to wobble slightly. This wobble shifts the wavelength of the star's light — toward red when the star moves away, and toward blue when it moves toward us. By measuring these shifts, astronomers can determine the planet's mass. Each method has limitations. Transits only work if the planet's orbit aligns with our viewpoint, while radial velocity favors larger planets close to their stars. Most confirmed discoveries today rely on combining both techniques.</p>
+        </details>
       </div>
+    </div>
+
+    <div class="audio-tip">
+      <strong>關於聽力音檔</strong>
+      <p>播放鈕使用瀏覽器內建的 Web Speech API 朗讀講稿(免費、離線可用、語速可調)。<strong>建議用 Chrome / Edge / Safari 取得最自然的英語語音</strong>。若想要真人錄製的官方音檔,可至 <a href="https://www.ets.org/toefl/test-takers/ibt/prepare/sample-questions" target="_blank" rel="noopener">ETS 官方練習題</a> 或 <a href="https://www.youtube.com/results?search_query=TOEFL+listening+TPO+lecture" target="_blank" rel="noopener">YouTube TPO 真題</a> 取得。</p>
     </div>
 
     <div class="note-area">

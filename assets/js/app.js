@@ -568,29 +568,116 @@ function checkReadingAnswer(btn, isCorrect) {
   }
 }
 
-// ============ AUDIO SIMULATION ============
-const audioStates = {};
-function togglePlay(btn, id) {
-  if (audioStates[id]?.playing) {
-    clearInterval(audioStates[id].interval);
-    audioStates[id].playing = false;
-    btn.innerHTML = '<svg width="12" height="14" viewBox="0 0 12 14" fill="currentColor"><path d="M0 0 L0 14 L12 7 Z"/></svg>';
-  } else {
-    if (!audioStates[id]) audioStates[id] = { progress: 0 };
-    audioStates[id].playing = true;
-    btn.innerHTML = '<svg width="12" height="14" viewBox="0 0 12 14" fill="currentColor"><rect x="0" y="0" width="4" height="14"/><rect x="8" y="0" width="4" height="14"/></svg>';
-    audioStates[id].interval = setInterval(() => {
-      audioStates[id].progress += 0.5;
-      if (audioStates[id].progress >= 100) {
-        audioStates[id].progress = 100;
-        clearInterval(audioStates[id].interval);
-        audioStates[id].playing = false;
-        btn.innerHTML = '<svg width="12" height="14" viewBox="0 0 12 14" fill="currentColor"><path d="M0 0 L0 14 L12 7 Z"/></svg>';
-      }
-      document.getElementById(`prog${id}`).style.width = audioStates[id].progress + '%';
-    }, 200);
+// ============ LISTENING — REAL TEXT-TO-SPEECH ============
+const speechStates = {};
+const PLAY_ICON = '<svg class="play-icon" width="12" height="14" viewBox="0 0 12 14" fill="currentColor"><path d="M0 0 L0 14 L12 7 Z"/></svg>';
+const PAUSE_ICON = '<svg class="play-icon" width="12" height="14" viewBox="0 0 12 14" fill="currentColor"><rect x="0" y="0" width="4" height="14"/><rect x="8" y="0" width="4" height="14"/></svg>';
+
+function speakTrack(btn, id) {
+  if (!('speechSynthesis' in window)) {
+    alert('你的瀏覽器不支援語音合成 (Web Speech API)。建議改用 Chrome、Edge 或 Safari。');
+    return;
   }
+  const state = speechStates[id];
+
+  // If currently speaking this track, stop it
+  if (state && state.playing) {
+    window.speechSynthesis.cancel();
+    state.playing = false;
+    btn.innerHTML = PLAY_ICON;
+    clearInterval(state.progressTimer);
+    document.getElementById(`prog${id}`).style.width = '0%';
+    return;
+  }
+
+  // Stop any other track that may be playing
+  Object.keys(speechStates).forEach(k => {
+    if (speechStates[k] && speechStates[k].playing) {
+      window.speechSynthesis.cancel();
+      speechStates[k].playing = false;
+      const otherBtn = document.querySelector(`[data-track="${k}"] .play-btn`);
+      if (otherBtn) otherBtn.innerHTML = PLAY_ICON;
+      clearInterval(speechStates[k].progressTimer);
+      const otherProg = document.getElementById(`prog${k}`);
+      if (otherProg) otherProg.style.width = '0%';
+    }
+  });
+
+  // Get the script text
+  const scriptEl = document.getElementById(`script${id}`);
+  if (!scriptEl) {
+    alert('找不到講稿內容。');
+    return;
+  }
+  const text = scriptEl.textContent.trim();
+
+  // Pick an English voice if available
+  const voices = window.speechSynthesis.getVoices();
+  let voice = voices.find(v => v.lang === 'en-US' && v.name.includes('Google')) ||
+              voices.find(v => v.lang === 'en-US') ||
+              voices.find(v => v.lang.startsWith('en'));
+
+  // Build utterance
+  const utter = new SpeechSynthesisUtterance(text);
+  if (voice) utter.voice = voice;
+  utter.lang = 'en-US';
+  utter.rate = 0.95;
+  utter.pitch = 1.0;
+  utter.volume = 1.0;
+
+  // Estimate duration (roughly 150 words per minute at rate=0.95 → ~2.6 words/sec)
+  const wordCount = text.split(/\s+/).length;
+  const estimatedSeconds = Math.max(30, Math.round(wordCount / 2.5));
+
+  speechStates[id] = {
+    playing: true,
+    startTime: Date.now(),
+    estimatedSeconds,
+    progressTimer: null,
+  };
+
+  utter.onstart = () => {
+    btn.innerHTML = PAUSE_ICON;
+    // Start a progress timer based on estimated duration
+    speechStates[id].progressTimer = setInterval(() => {
+      const elapsed = (Date.now() - speechStates[id].startTime) / 1000;
+      const percent = Math.min(99, (elapsed / estimatedSeconds) * 100);
+      const progEl = document.getElementById(`prog${id}`);
+      if (progEl) progEl.style.width = percent + '%';
+    }, 200);
+  };
+
+  utter.onend = () => {
+    btn.innerHTML = PLAY_ICON;
+    speechStates[id].playing = false;
+    clearInterval(speechStates[id].progressTimer);
+    const progEl = document.getElementById(`prog${id}`);
+    if (progEl) progEl.style.width = '100%';
+    setTimeout(() => {
+      if (progEl) progEl.style.width = '0%';
+    }, 1500);
+  };
+
+  utter.onerror = (e) => {
+    console.error('Speech error:', e);
+    btn.innerHTML = PLAY_ICON;
+    speechStates[id].playing = false;
+    clearInterval(speechStates[id].progressTimer);
+  };
+
+  window.speechSynthesis.speak(utter);
 }
+
+// Some browsers load voices asynchronously
+if ('speechSynthesis' in window) {
+  window.speechSynthesis.onvoiceschanged = () => {
+    // Voices ready — no-op needed, just trigger cache
+    window.speechSynthesis.getVoices();
+  };
+}
+
+// Keep togglePlay as an alias in case anything still references it
+function togglePlay(btn, id) { speakTrack(btn, id); }
 
 function clearNote(id) {
   document.getElementById(id).value = '';

@@ -1,12 +1,11 @@
 # Scholastica — TOEFL 進階備考
 
 一個為目標 100+ 分的 TOEFL 考生打造的靜態網站。
-**深藍學術風(Navy + Cream)**,純 HTML/CSS/JS,無框架依賴。
+**現代簡約風(Modern Minimal)** — 白底 + 青藍/青綠強調 + Inter 字型,純 HTML/CSS/JS,無框架依賴。
 
 🌐 **線上 Demo** → [https://jungcharlix.github.io/scholastica-toefl/](https://jungcharlix.github.io/scholastica-toefl/)
 
-> *"Sapere aude." — Dare to know.*
-> — 拉丁文,意為「敢於求知」。出自賀拉斯,被康德定為啟蒙運動的座右銘。
+> 為目標 100+ 的考生量身打造。從字彙到真題,從計時到檢討,一站完成。
 
 ## ✦ 功能總覽
 
@@ -112,4 +111,4 @@ MIT — 詳見 [LICENSE](./LICENSE)
 
 ---
 
-*Made for learners. Est. MMXXVI.*
+*Built for learners aiming 100+. 2026.*

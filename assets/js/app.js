@@ -440,13 +440,13 @@ function shuffleCards() {
 // Render word list
 function renderWordList() {
   const html = vocabulary.map(v =>
-    `<div style="break-inside: avoid; margin-bottom: 20px; padding-bottom: 14px; border-bottom: 1px dotted var(--rule);">
-      <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px;">
-        <span style="font-family: 'Fraunces', serif; font-size: 22px; font-weight: 400; color: var(--ink);">${v.word}</span>
-        <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--sepia);">${v.pron}</span>
+    `<div style="break-inside: avoid; margin-bottom: 16px; padding: 14px 16px; background: var(--paper-2); border-radius: 8px;">
+      <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 6px;">
+        <span style="font-family: 'Inter', sans-serif; font-size: 18px; font-weight: 700; color: var(--ink); letter-spacing: -0.02em;">${v.word}</span>
+        <span style="font-family: 'Inter', sans-serif; font-size: 11px; color: var(--sepia);">${v.pron}</span>
       </div>
-      <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--oxblood); margin: 4px 0;">${v.pos}</div>
-      <div style="font-size: 15px; color: var(--ink-2); line-height: 1.55;">${v.def}</div>
+      <div style="display: inline-block; font-family: 'Inter', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--oxblood); padding: 2px 8px; background: rgba(8, 145, 178, 0.08); border-radius: 4px; margin-bottom: 6px;">${v.pos}</div>
+      <div style="font-size: 14px; color: var(--ink-2); line-height: 1.5;">${v.def}</div>
     </div>`
   ).join('');
   document.getElementById('wordlistContent').innerHTML = html;
@@ -2099,7 +2099,7 @@ function renderReviewSpeaking() {
       ${c.speakPrompt}
     </div>
 
-    <h3 style="font-family:'Fraunces',serif; font-weight:400; font-size:22px; margin: 24px 0 12px;">
+    <h3 style="font-family:'Inter',sans-serif; font-weight:400; font-size:22px; margin: 24px 0 12px;">
       四面向評分 <span style="font-style:italic; color: var(--oxblood);">Rubric Breakdown</span>
     </h3>
     <p style="font-size: 14px; color: var(--sepia); margin-bottom: 8px; font-style: italic;">注:系統無法分析語音,以下為基於範例答案的標準參考。請對照自己的錄音檢視。</p>
@@ -2116,7 +2116,7 @@ function renderReviewSpeaking() {
       </ul>
     </div>
 
-    <h3 style="font-family:'Fraunces',serif; font-weight:400; font-size:22px; margin: 32px 0 12px;">
+    <h3 style="font-family:'Inter',sans-serif; font-weight:400; font-size:22px; margin: 32px 0 12px;">
       範例答案 <span style="font-style:italic; color: var(--oxblood);">Model Response</span>
     </h3>
     <div class="model-answer-block">
@@ -2197,7 +2197,7 @@ function renderReviewWriting() {
 
     ${userBlock}
 
-    <h3 style="font-family:'Fraunces',serif; font-weight:400; font-size:22px; margin: 24px 0 12px;">
+    <h3 style="font-family:'Inter',sans-serif; font-weight:400; font-size:22px; margin: 24px 0 12px;">
       四面向自動評分 <span style="font-style:italic; color: var(--oxblood);">Automated Rubric</span>
     </h3>
     <p style="font-size: 14px; color: var(--sepia); margin-bottom: 8px; font-style: italic;">注:基於文本分析(字數、立場標記、轉折詞、詞彙多樣性)的自動評估,僅供參考。</p>
@@ -2219,7 +2219,7 @@ function renderReviewWriting() {
       </ul>
     </div>
 
-    <h3 style="font-family:'Fraunces',serif; font-weight:400; font-size:22px; margin: 32px 0 12px;">
+    <h3 style="font-family:'Inter',sans-serif; font-weight:400; font-size:22px; margin: 32px 0 12px;">
       範例答案 <span style="font-style:italic; color: var(--oxblood);">Model Response</span>
     </h3>
     <div class="model-answer-block">
@@ -2268,8 +2268,8 @@ function renderReviewSummary() {
 
   let summaryHtml = `
     <div class="review-prompt" style="border-left-color: var(--gold);">
-      <strong style="font-family:'Fraunces',serif; font-size: 22px; font-style: italic;">本次錯題摘要</strong><br>
-      <span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.15em; color: var(--sepia);">${totalQs - totalWrong} / ${totalQs} CORRECT · ${accuracy}% ACCURACY</span>
+      <strong style="font-family:'Inter',sans-serif; font-size: 22px; font-style: italic;">本次錯題摘要</strong><br>
+      <span style="font-family: 'Inter', sans-serif; font-size: 12px; letter-spacing: 0.15em; color: var(--sepia);">${totalQs - totalWrong} / ${totalQs} CORRECT · ${accuracy}% ACCURACY</span>
     </div>
   `;
 
@@ -2288,8 +2288,8 @@ function renderReviewSummary() {
       return `
         <div style="margin-bottom: 14px;">
           <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
-            <span style="font-family:'Newsreader', serif; font-size: 14px; color: var(--ink);">${s}</span>
-            <span style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--oxblood);">${n} 題</span>
+            <span style="font-family:'Inter', sans-serif; font-size: 14px; color: var(--ink);">${s}</span>
+            <span style="font-family: 'Inter', sans-serif; font-size: 11px; color: var(--oxblood);">${n} 題</span>
           </div>
           <div style="height: 6px; background: var(--paper-3);">
             <div style="height: 100%; background: var(--oxblood); width: ${pct}%;"></div>
@@ -2307,7 +2307,7 @@ function renderReviewSummary() {
     `;
 
     // Each wrong question quick reference
-    summaryHtml += '<h3 style="font-family:\'Fraunces\',serif; font-weight:400; font-size:22px; margin: 32px 0 16px;">錯題逐題回顧 <span style="font-style:italic; color: var(--oxblood);">Wrong Answer Recap</span></h3>';
+    summaryHtml += '<h3 style="font-family:\'Inter\',sans-serif; font-weight:400; font-size:22px; margin: 32px 0 16px;">錯題逐題回顧 <span style="font-style:italic; color: var(--oxblood);">Wrong Answer Recap</span></h3>';
     summaryHtml += '<div>';
     wrongReading.forEach(x => {
       summaryHtml += `
@@ -2411,7 +2411,7 @@ function generateStudyPlan(skillMap, totalWrong, totalQs) {
   const topStrategy = topWeakness && skillStrategies[topWeakness] ? skillStrategies[topWeakness] : null;
 
   let planHtml = `
-    <h3 style="font-family:'Fraunces',serif; font-weight:400; font-size:28px; margin: 48px 0 8px; letter-spacing: -0.02em;">
+    <h3 style="font-family:'Inter',sans-serif; font-weight:400; font-size:28px; margin: 48px 0 8px; letter-spacing: -0.02em;">
       個人化 14 天訓練計畫 <span style="font-style:italic; color: var(--oxblood);">Personalised Path</span>
     </h3>
     <p style="font-size: 15px; color: var(--sepia); margin-bottom: 24px; font-style: italic;">基於本次錯題分析自動產生。建議印出來貼在桌前,每完成一天打勾。</p>
@@ -2424,9 +2424,9 @@ function generateStudyPlan(skillMap, totalWrong, totalQs) {
       <span class="target">${target} 分</span>
       ${topStrategy ? `
         <div style="border-top: 1px dotted var(--rule); padding-top: 16px; margin-top: 16px;">
-          <p style="font-size: 14px;"><strong style="color: var(--ink); font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase;">CORE DIAGNOSIS · 核心診斷</strong></p>
+          <p style="font-size: 14px;"><strong style="color: var(--ink); font-family: 'Inter', sans-serif; font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase;">CORE DIAGNOSIS · 核心診斷</strong></p>
           <p style="font-size: 15px; margin-top: 8px;">你的最大弱項是 <em style="color: var(--oxblood);">${topWeakness}</em>。${topStrategy.diagnosis}</p>
-          <p style="font-size: 15px; margin-top: 12px;"><strong style="color: var(--ink); font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase;">PRESCRIPTION · 對症處方</strong></p>
+          <p style="font-size: 15px; margin-top: 12px;"><strong style="color: var(--ink); font-family: 'Inter', sans-serif; font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase;">PRESCRIPTION · 對症處方</strong></p>
           <p style="font-size: 15px; margin-top: 8px;">${topStrategy.fix}</p>
         </div>
       ` : ''}
